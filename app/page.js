@@ -1,6 +1,7 @@
 import RotatingRole from '@/components/RotatingRole'
+import LanguageDonut from '@/components/LanguageDonut'
 import {
-  profile, stats, skills, experience, education, projects, awards, openSource,
+  profile, stats, skills, experience, education, projects, awards, openSource, languages,
 } from '@/data/cv'
 
 const NAV = [
@@ -153,6 +154,18 @@ export default function Page() {
                 </ul>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* ── language mix ────────────────────────────────── */}
+        <section className="border-t border-line py-24">
+          <SectionHead
+            label="Where the time went"
+            title="Language mix"
+            sub="My own estimate across 10 years of shipping — most of it lives in private repositories, so GitHub cannot tell this story."
+          />
+          <div className="reveal card rounded-2xl border border-line bg-ink-2 p-8 sm:p-10">
+            <LanguageDonut data={languages} centerValue="10 yrs" centerLabel="shipping mobile" />
           </div>
         </section>
 

@@ -117,3 +117,22 @@ body {
   .reveal { opacity: 1; transform: none; transition: none; }
   .card:hover { transform: none; }
 }
+
+/* ---------- donut ---------- */
+
+.donut-seg {
+  transition:
+    stroke-dasharray 0.9s cubic-bezier(0.22, 1, 0.36, 1) var(--seg-delay, 0ms),
+    stroke-width 0.25s ease;
+}
+.shown .donut-seg {
+  stroke-dasharray: var(--len);
+}
+.donut circle {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .donut-seg { transition: stroke-width 0.25s ease; }
+  .shown .donut-seg { stroke-dasharray: var(--len); }
+}

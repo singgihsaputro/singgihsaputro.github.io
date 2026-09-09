@@ -120,6 +120,19 @@ export const education = [
   },
 ]
 
+// Donut chart. Your own estimate of where the last 10 years went — GitHub cannot
+// show this, since the Kotlin work is in private repos. Adjust the numbers freely;
+// they are normalised, so they do not have to add up to exactly 100.
+// Keep it to 6 entries — past that a donut stops being readable.
+export const languages = [
+  { name: 'Kotlin', value: 52 },
+  { name: 'Java', value: 26 },
+  { name: 'Dart', value: 8 },
+  { name: 'JavaScript', value: 5 },
+  { name: 'Python', value: 3 },
+  { name: 'Other', value: 6 },
+]
+
 // Shipped products. `link` opens the Play Store listing.
 export const projects = [
   {
