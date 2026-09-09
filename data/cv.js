@@ -108,13 +108,13 @@ export const experience = [
 export const education = [
   {
     school: 'University of Indonesia',
-    degree: 'Master of Information Technology · GPA 3.42 / 4',
+    degree: 'Master of Information Technology',
     period: '2023 — 2026',
     location: 'Jakarta, Indonesia',
   },
   {
     school: 'Brawijaya University',
-    degree: 'Bachelor of Computer Science · GPA 3.53 / 4',
+    degree: 'Bachelor of Computer Science',
     period: '2011 — 2016',
     location: 'Malang, East Java, Indonesia',
   },

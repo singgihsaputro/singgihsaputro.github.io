@@ -117,9 +117,13 @@ export default function SiteNav({ primaryHref, primaryLabel }) {
           height to measure and nothing that can collapse to zero. */}
       <div
         id="mobile-menu"
-        className={`absolute inset-x-0 top-full border-b border-line bg-ink/95 backdrop-blur-md transition duration-300 md:hidden ${
-          open ? 'translate-y-0 opacity-100' : 'pointer-events-none -translate-y-2 opacity-0'
-        }`}
+        className="absolute inset-x-0 top-full border-b border-line bg-ink/95 backdrop-blur-md md:hidden"
+        style={{
+          opacity: open ? 1 : 0,
+          transform: open ? 'translateY(0)' : 'translateY(-8px)',
+          pointerEvents: open ? 'auto' : 'none',
+          transition: 'opacity 260ms ease, transform 260ms ease',
+        }}
       >
         <div className="flex flex-col gap-1 px-6 py-4">
           {NAV.map(([label, id]) => link(label, id, 'py-2 text-base'))}
