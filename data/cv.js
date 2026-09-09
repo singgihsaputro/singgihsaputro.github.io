@@ -155,7 +155,7 @@ export const projects = [
     description:
       'Digital wallet covering QRIS, transfers, and bills. Extended the delivery initiative across both consumer apps.',
     metric: '100M+ downloads · 4.7★',
-    tags: ['Kotlin', 'Jetpack Compose', 'MVVM', 'Multi-Module', 'Clean Arch', 'Coroutines', 'Flow'],
+    tags: ['Flutter', 'Dart', 'MVVM', 'Multi-Module', 'Clean Arch'],
     link: 'https://play.google.com/store/apps/details?id=com.gojek.gopay&hl=id',
   },
   {
