@@ -97,6 +97,7 @@ export default function SiteNav({ primaryHref, primaryLabel }) {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-controls="mobile-menu"
             className="focus-ring -mr-2 rounded-md p-2 text-muted transition-colors hover:text-fg md:hidden"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden>
@@ -111,26 +112,29 @@ export default function SiteNav({ primaryHref, primaryLabel }) {
         </div>
       </nav>
 
-      {/* mobile menu — the page had no navigation at all below 640px */}
+      {/* Mobile menu. Anchored to the header (which is the positioned
+          ancestor), so it animates on opacity and translate alone — no
+          height to measure and nothing that can collapse to zero. */}
       <div
-        className={`grid overflow-hidden border-t border-line transition-[grid-template-rows] duration-300 md:hidden ${
-          open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr] border-transparent'
+        id="mobile-menu"
+        className={`absolute inset-x-0 top-full border-b border-line bg-ink/95 backdrop-blur-md transition duration-300 md:hidden ${
+          open ? 'translate-y-0 opacity-100' : 'pointer-events-none -translate-y-2 opacity-0'
         }`}
       >
-        <div className="min-h-0">
-          <div className="flex flex-col gap-1 px-6 py-4">
-            {NAV.map(([label, id]) => link(label, id, 'py-2 text-base'))}
-            <a
-              href={primaryHref}
-              target="_blank"
-              rel="noreferrer"
-              className="nav-link py-2 text-base"
-            >
-              {primaryLabel} ↗
-            </a>
-          </div>
+        <div className="flex flex-col gap-1 px-6 py-4">
+          {NAV.map(([label, id]) => link(label, id, 'py-2 text-base'))}
+          <a
+            href={primaryHref}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setOpen(false)}
+            className="nav-link py-2 text-base"
+          >
+            {primaryLabel} ↗
+          </a>
         </div>
       </div>
+
     </header>
   )
 }
