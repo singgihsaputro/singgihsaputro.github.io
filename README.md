@@ -7,22 +7,26 @@ GitHub Pages by Actions on every push to `main`.
 
 ## Editing the content
 
-All copy lives in one file — [`data/cv.js`](data/cv.js). Nothing else needs touching.
+All copy lives in one file — [`data/cv.js`](data/cv.js), populated from
+`CV_Singgih_2026_H2_full.pdf`. Nothing else needs touching.
 
 ```
 profile     name, roles (they type themselves in the hero), email, links, summary
 stats       the three numbers under the hero
 skills      grouped tag pills
-experience  the timeline   ← has TODO placeholders, replace them
-education   degree cards   ← has TODO placeholders (delete the array to hide the section)
-projects    the project grid
+experience  the timeline — Gojek, Kemendikbud, DANA, Ice House
+projects    shipped apps, each linking to its Play Store listing
+openSource  the compact "Also on GitHub" list
+awards      hackathons and competitions
+education   degree cards
 ```
 
-Search the repo for `TODO` to find everything still unfilled.
+Two fields are deliberately empty:
 
-Adding a downloadable CV: drop the PDF in `public/`, then set
-`resume: '/your-cv.pdf'` in `data/cv.js` — a "Download CV" button appears.
-Same idea for `linkedin: '...'`.
+- `profile.phone` — your CV has it, this page does not. Public pages get scraped
+  by spam harvesters. Fill it in and a phone button appears in the contact section.
+- `profile.resume` — drop the PDF in `public/`, set `resume: '/your-cv.pdf'`,
+  and a "Download CV" button appears.
 
 ## Local
 
