@@ -53,8 +53,9 @@ body {
   animation-delay: calc(var(--i, 0) * 90ms);
 }
 
-/* Scroll reveal — .reveal starts hidden, JS adds .shown */
-.reveal {
+/* Scroll reveal. Visible by default — Reveal.js puts .js-reveal on <html> to opt
+   into hiding, so no JS (or a failed bundle) leaves the page readable, not blank. */
+.js-reveal .reveal {
   opacity: 0;
   transform: translateY(22px);
   transition:
@@ -62,7 +63,7 @@ body {
     transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
   transition-delay: var(--d, 0ms);
 }
-.reveal.shown {
+.js-reveal .reveal.shown {
   opacity: 1;
   transform: none;
 }
@@ -114,7 +115,7 @@ body {
   html { scroll-behavior: auto; }
   .rise, .blob, .gradient-text, .caret::after { animation: none; }
   .rise { opacity: 1; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .js-reveal .reveal { opacity: 1; transform: none; transition: none; }
   .card:hover { transform: none; }
 }
 
@@ -125,7 +126,10 @@ body {
     stroke-dasharray 0.9s cubic-bezier(0.22, 1, 0.36, 1) var(--seg-delay, 0ms),
     stroke-width 0.25s ease;
 }
-.shown .donut-seg {
+.js-reveal .donut-seg {
+  stroke-dasharray: 0 100;
+}
+.js-reveal .shown .donut-seg {
   stroke-dasharray: var(--len);
 }
 .donut circle {
@@ -134,5 +138,6 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .donut-seg { transition: stroke-width 0.25s ease; }
-  .shown .donut-seg { stroke-dasharray: var(--len); }
+  .js-reveal .donut-seg,
+  .js-reveal .shown .donut-seg { stroke-dasharray: var(--len); }
 }

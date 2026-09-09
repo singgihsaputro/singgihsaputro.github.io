@@ -15,7 +15,13 @@ export default function LanguageDonut({ data, centerValue, centerLabel }) {
   let cursor = 0
   const segments = data.map((d, i) => {
     const pct = (d.value / total) * 100
-    const seg = { ...d, pct, color: SLOTS[i % SLOTS.length], rotate: -90 + cursor * 3.6 }
+    const seg = {
+      ...d,
+      pct,
+      color: SLOTS[i % SLOTS.length],
+      rotate: -90 + cursor * 3.6,
+      len: Math.max(pct - GAP, 0.5),
+    }
     cursor += pct
     return seg
   })
@@ -42,9 +48,11 @@ export default function LanguageDonut({ data, centerValue, centerLabel }) {
               fill="none"
               stroke={s.color}
               strokeWidth={active === i ? 30 : 22}
-              strokeDasharray="0 100"
+              /* full length by default; the CSS collapses it to 0 only when JS is
+                 driving the animation, so a no-JS render still draws the donut */
+              strokeDasharray={`${s.len} 100`}
               transform={`rotate(${s.rotate} 100 100)`}
-              style={{ '--len': `${Math.max(s.pct - GAP, 0.5)} 100`, '--seg-delay': `${i * 90}ms` }}
+              style={{ '--len': `${s.len} 100`, '--seg-delay': `${i * 90}ms` }}
               onMouseEnter={() => setActive(i)}
               onMouseLeave={() => setActive(null)}
             />
