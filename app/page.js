@@ -1,21 +1,19 @@
 import RotatingRole from '@/components/RotatingRole'
+import SiteNav from '@/components/SiteNav'
+import CardSpotlight from '@/components/CardSpotlight'
 import LanguageDonut from '@/components/LanguageDonut'
 import {
   profile, stats, skills, experience, education, projects, awards, openSource, languages,
 } from '@/data/cv'
 
-const NAV = [
-  ['About', '#about'],
-  ['Experience', '#experience'],
-  ['Work', '#projects'],
-  ['Awards', '#awards'],
-  ['Contact', '#contact'],
-]
 
-function SectionHead({ label, title, sub }) {
+function SectionHead({ n, label, title, sub }) {
   return (
     <div className="reveal mb-12">
-      <p className="mb-3 font-mono text-xs tracking-[0.2em] text-accent uppercase">{label}</p>
+      <p className="mb-3 flex items-center gap-3 font-mono text-xs tracking-[0.2em] uppercase">
+        {n && <span className="section-no">{String(n).padStart(2, '0')}</span>}
+        <span className="text-accent">{label}</span>
+      </p>
       <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">{title}</h2>
       {sub && <p className="mt-3 max-w-2xl text-muted">{sub}</p>}
     </div>
@@ -25,31 +23,10 @@ function SectionHead({ label, title, sub }) {
 export default function Page() {
   return (
     <>
-      {/* ── nav ───────────────────────────────────────────── */}
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-ink/70 backdrop-blur-md">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-          <a href="#top" className="font-mono text-sm font-medium tracking-tight">
-            singgih<span className="text-accent">.</span>
-          </a>
-          <ul className="hidden gap-7 text-sm text-muted sm:flex">
-            {NAV.map(([label, href]) => (
-              <li key={href}>
-                <a href={href} className="transition-colors hover:text-fg">
-                  {label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <a
-            href={profile.linkedin || profile.github}
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full border border-line px-4 py-1.5 text-sm text-muted transition-colors hover:border-accent/50 hover:text-fg"
-          >
-            {profile.linkedin ? 'LinkedIn' : 'GitHub'}
-          </a>
-        </nav>
-      </header>
+      <SiteNav
+        primaryHref={profile.linkedin || profile.github}
+        primaryLabel={profile.linkedin ? 'LinkedIn' : 'GitHub'}
+      />
 
       <main id="top" className="mx-auto max-w-5xl px-6">
         {/* ── hero ────────────────────────────────────────── */}
@@ -131,6 +108,7 @@ export default function Page() {
         {/* ── skills ──────────────────────────────────────── */}
         <section id="about" className="border-t border-line py-24">
           <SectionHead
+            n={1}
             label="What I work with"
             title="Skills"
             sub="Day-to-day tools, roughly in the order I reach for them."
@@ -160,6 +138,7 @@ export default function Page() {
         {/* ── language mix ────────────────────────────────── */}
         <section id="languages" className="border-t border-line py-24">
           <SectionHead
+            n={2}
             label="Where the time went"
             title="Language mix"
             sub="My own estimate across 10 years of shipping — most of it lives in private repositories, so GitHub cannot tell this story."
@@ -171,7 +150,8 @@ export default function Page() {
 
         {/* ── experience ──────────────────────────────────── */}
         <section id="experience" className="border-t border-line py-24">
-          <SectionHead label="Where I have been" title="Experience" />
+          <SectionHead n={3}
+            label="Where I have been" title="Experience" />
           <ol className="relative border-l border-line pl-8">
             {experience.map((job, i) => (
               <li key={`${job.company}-${i}`} className="reveal mb-14 last:mb-0" style={{ '--d': `${i * 80}ms` }}>
@@ -202,6 +182,7 @@ export default function Page() {
         {/* ── projects ────────────────────────────────────── */}
         <section id="projects" className="border-t border-line py-24">
           <SectionHead
+            n={4}
             label="Shipped products"
             title="Work"
             sub="Apps I have built and maintained in production."
@@ -260,7 +241,8 @@ export default function Page() {
 
         {/* ── awards ──────────────────────────────────────── */}
         <section id="awards" className="border-t border-line py-24">
-          <SectionHead label="Recognition" title="Awards" />
+          <SectionHead n={5}
+            label="Recognition" title="Awards" />
           <ul className="grid gap-5 sm:grid-cols-2">
             {awards.map((a, i) => (
               <li
@@ -279,7 +261,8 @@ export default function Page() {
 
         {/* ── education ───────────────────────────────────── */}
         <section className="border-t border-line py-24">
-          <SectionHead label="Background" title="Education" />
+          <SectionHead n={6}
+            label="Background" title="Education" />
           <div className="grid gap-5 sm:grid-cols-2">
             {education.map((e, i) => (
               <div
@@ -335,6 +318,8 @@ export default function Page() {
           </div>
         </section>
       </main>
+
+      <CardSpotlight />
 
       <footer className="border-t border-line py-8">
         <p className="mx-auto max-w-5xl px-6 font-mono text-xs text-muted">
