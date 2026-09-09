@@ -158,7 +158,7 @@ export default function Page() {
         </section>
 
         {/* ── language mix ────────────────────────────────── */}
-        <section className="border-t border-line py-24">
+        <section id="languages" className="border-t border-line py-24">
           <SectionHead
             label="Where the time went"
             title="Language mix"
