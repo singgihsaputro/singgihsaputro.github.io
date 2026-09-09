@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# singgihsaputro.github.io
 
-## Getting Started
+Personal CV / landing page. Next.js (static export) + Tailwind CSS v4, deployed to
+GitHub Pages by Actions on every push to `main`.
 
-First, run the development server:
+**Live:** https://singgihsaputro.github.io
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Editing the content
+
+All copy lives in one file — [`data/cv.js`](data/cv.js). Nothing else needs touching.
+
+```
+profile     name, roles (they type themselves in the hero), email, links, summary
+stats       the three numbers under the hero
+skills      grouped tag pills
+experience  the timeline   ← has TODO placeholders, replace them
+education   degree cards   ← has TODO placeholders (delete the array to hide the section)
+projects    the project grid
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Search the repo for `TODO` to find everything still unfilled.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Adding a downloadable CV: drop the PDF in `public/`, then set
+`resume: '/your-cv.pdf'` in `data/cv.js` — a "Download CV" button appears.
+Same idea for `linkedin: '...'`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Local
 
-## Learn More
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build      # static site into ./out
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploying
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Pushing to `main` is the deploy. `.github/workflows/deploy.yml` builds and publishes
+`out/` to Pages.
 
-## Deploy on Vercel
+One-time setup, already done for this repo: **Settings → Pages → Source: GitHub Actions**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Because it is a static export, `next start`, server components with runtime data,
+route handlers, and image optimization are all off the table. Everything renders at
+build time. If you later want those, deploy to Vercel instead and drop
+`output: 'export'` from `next.config.mjs`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`public/.nojekyll` only matters if you ever switch Pages back to branch-based
+publishing — Jekyll would otherwise eat the `_next/` folder.
+
+## Animation
+
+No animation library. CSS keyframes in `app/globals.css` plus one
+`IntersectionObserver` in [`components/Reveal.js`](components/Reveal.js) that adds
+`.shown` to any `.reveal` element scrolled into view.
+
+- `.rise` — hero items fade up on load, staggered with `--i`
+- `.reveal` — scroll-triggered fade up, delayed with `--d`
+- `.gradient-text` — animated gradient on the name
+- `.blob` — drifting background colour
+- `RotatingRole` — types the job titles out one by one
+
+All of it collapses to static under `prefers-reduced-motion: reduce`.
