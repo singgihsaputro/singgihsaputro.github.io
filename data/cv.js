@@ -29,7 +29,7 @@ export const profile = {
   resume: '', // Drop the PDF in /public and set e.g. '/singgih-cv.pdf'
   // Google Search Console → Add property → URL prefix → HTML tag.
   // Paste ONLY the content="..." value here, not the whole <meta> tag.
-  googleVerification: '',
+  googleVerification: 'wQAwigQgaZOa-cfUvERPjF-qh3TtQ2qyRFKcUpqtEBo',
   summary:
     'Senior Android Engineer with 10 years building consumer and merchant apps at ' +
     "Indonesia's largest technology companies, including products with 100M+ downloads. " +
