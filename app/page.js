@@ -315,7 +315,7 @@ export default function Page() {
               Let us build something.
             </h2>
             <p className="mx-auto mt-4 max-w-md text-muted">
-              Open to senior and lead Android roles, and good conversations about Kotlin.
+              {profile.openTo}
             </p>
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <a

@@ -10,14 +10,14 @@ const url = 'https://singgihsaputro.github.io'
 
 export const metadata = {
   metadataBase: new URL(url),
-  title: `${profile.name} — ${profile.roles[0]}`,
+  title: `${profile.name} — ${profile.titles[0]}`,
   description: profile.summary,
   alternates: { canonical: '/' },
   authors: [{ name: profile.name, url }],
   creator: profile.name,
-  keywords: [profile.name, 'Android Engineer', 'Jakarta', profile.company, ...skills.flatMap((s) => s.items)],
+  keywords: [profile.name, ...profile.titles, 'Jakarta', profile.company, ...skills.flatMap((s) => s.items)],
   openGraph: {
-    title: `${profile.name} — ${profile.roles[0]}`,
+    title: `${profile.name} — ${profile.titles[0]}`,
     description: profile.summary,
     url,
     siteName: profile.name,
@@ -27,7 +27,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: `${profile.name} — ${profile.roles[0]}`,
+    title: `${profile.name} — ${profile.titles[0]}`,
     description: profile.summary,
     images: [profile.avatar],
   },
@@ -40,7 +40,7 @@ const personLd = {
   name: profile.name,
   url,
   image: profile.avatar,
-  jobTitle: profile.roles[0],
+  jobTitle: profile.titles,
   description: profile.summary,
   email: `mailto:${profile.email}`,
   worksFor: { '@type': 'Organization', name: profile.company },

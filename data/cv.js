@@ -8,10 +8,15 @@ export const profile = {
   // Rotates in the hero, one after another.
   roles: [
     'Senior Android Engineer',
+    'Full-Stack Engineer',
     'Kotlin · Jetpack Compose',
     'Server-Driven UI',
     '10 years shipping mobile',
   ],
+  // What search engines and recruiters read as the job title. Order matters.
+  titles: ['Senior Android Engineer', 'Full-Stack Engineer'],
+  // One line under the contact heading.
+  openTo: 'Open to senior and lead roles across Android and full-stack, and good conversations about Kotlin.',
   location: 'Jakarta, Indonesia',
   company: 'Gojek',
   email: 'singgih.rochmad@gmail.com',
@@ -26,7 +31,8 @@ export const profile = {
     'Senior Android Engineer with 10 years building consumer and merchant apps at ' +
     "Indonesia's largest technology companies, including products with 100M+ downloads. " +
     'Recent focus on server-driven UI, anti-fraud and KYC integration, and app size and ' +
-    'performance optimization. I lead cross-team delivery and mentor senior engineers.',
+    'performance optimization. I lead cross-team delivery and mentor senior engineers, and ' +
+    'work across the stack — Kotlin and Compose on the client, Java and Spring Boot on the server.',
 }
 
 export const stats = [
