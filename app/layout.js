@@ -13,6 +13,7 @@ export const metadata = {
   title: `${profile.name} — ${profile.titles[0]}`,
   description: profile.summary,
   alternates: { canonical: '/' },
+  ...(profile.googleVerification && { verification: { google: profile.googleVerification } }),
   authors: [{ name: profile.name, url }],
   creator: profile.name,
   keywords: [profile.name, ...profile.titles, 'Jakarta', profile.company, ...skills.flatMap((s) => s.items)],

@@ -27,6 +27,9 @@ export const profile = {
   phone: '',
   avatar: 'https://avatars.githubusercontent.com/u/3947112?v=4',
   resume: '', // Drop the PDF in /public and set e.g. '/singgih-cv.pdf'
+  // Google Search Console → Add property → URL prefix → HTML tag.
+  // Paste ONLY the content="..." value here, not the whole <meta> tag.
+  googleVerification: '',
   summary:
     'Senior Android Engineer with 10 years building consumer and merchant apps at ' +
     "Indonesia's largest technology companies, including products with 100M+ downloads. " +
