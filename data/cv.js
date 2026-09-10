@@ -40,9 +40,12 @@ export const skills = [
     group: 'Android Native',
     items: ['Kotlin', 'Jetpack Compose', 'MVVM', 'MVI', 'Coroutines', 'Flow', 'Multi-Module Architecture', 'Clean Architecture'],
   },
-  { group: 'Flutter', items: ['Dart', 'State Management', 'Git'] },
-  { group: 'Backend', items: ['Java', 'Spring Boot', 'Unit Test', 'Integration Test'] },
-  { group: 'Web', items: ['JavaScript', 'AngularJS', 'PHP', 'HTML', 'SQL'] },
+  {
+    group: 'Cross-Platform',
+    items: ['Kotlin Multiplatform', 'Flutter', 'Dart', 'Cordova', 'Ionic', 'State Management'],
+  },
+  { group: 'Backend', items: ['Java', 'Spring Boot', 'Python', 'C#', 'Unit Test', 'Integration Test'] },
+  { group: 'Web', items: ['JavaScript', 'React', 'AngularJS', 'PHP', 'HTML', 'SQL', 'Git'] },
 ]
 
 export const experience = [
@@ -141,6 +144,13 @@ export const projects = [
     metric: '5M+ downloads · 4.1★',
     tags: ['Kotlin', 'Jetpack Compose', 'MVVM', 'MVI', 'Multi-Module', 'Room', 'Retrofit', 'Coroutines', 'Flow'],
     link: 'https://play.google.com/store/apps/details?id=com.gojek.resto&hl=id',
+    icon: 'https://play-lh.googleusercontent.com/rR0n4zCcwQ_mC6_aLaFCCKrG0j6Sjo5o1N0VcS6BudvVi-3TSkn2c4pxPZdMHC8vDcZOzHmof6zlyV4DSHVtX6Y',
+    shots: [
+      'https://play-lh.googleusercontent.com/Or_oLdq7e2ashnXkUPQx7NkkMh2d8jj42CEOafKJdyJcEVtNnNQUgb13qoGWLkgsbBUslasY7hPZpItHa3Gmm9Y',
+      'https://play-lh.googleusercontent.com/PcuPfhgJ-N_gGRt8K3u6Cyhh3VyCAyAKSI7uzIvIsf-mP3LJ3cy2uAxqqPqVKwl6hodsZqaQvPduyjgSHj42RQ',
+      'https://play-lh.googleusercontent.com/20ekK7dLBOkHP34hRzVR0pQn5Pf0pUUZFxKxhFmPzM1HGRu04jmd3TI9I0sor2hqZ4Zyhc_eEXPgI8Sb6lxEXg',
+      'https://play-lh.googleusercontent.com/JPNZo3tKcAqGbswc6GYq6rkloTd0elsuGhTWG9sgS9gBwXqL6gdKVWWllwbQWHdi_GEzQNjhM3MZEYM86JE0KYg',
+    ],
   },
   {
     name: 'Gojek Consumer App',
@@ -149,6 +159,13 @@ export const projects = [
     metric: '100M+ downloads · 4.7★',
     tags: ['Kotlin', 'Jetpack Compose', 'MVVM', 'Multi-Module', 'Clean Arch', 'Coroutines', 'Flow', 'Firebase'],
     link: 'https://play.google.com/store/apps/details?id=com.gojek.app&hl=id',
+    icon: 'https://play-lh.googleusercontent.com/LMMiBxDmUDNqqTK8V3Xcgoy_Mf4t9TD-IbKznzp-NeOPH6GDV5vZ_SO0qjE3iv0LENGvu2dat9ZTIS4KS9UJ',
+    shots: [
+      'https://play-lh.googleusercontent.com/FAWGR-3Z52Y9QRdbU9eJU_oWkMYezdn34SxuUn6wVfE00eLROPRrTo6nwggz1GOyYx1DOnMdMvJnaTVUMZhT',
+      'https://play-lh.googleusercontent.com/eb3_-8IDnOwZ8PrvPJdook8JWhSuwQe9rwFyVLKJny8Poqkb8VZjeKnJ4By4ols6oBCXoO_luW07gWa2zuDa9g',
+      'https://play-lh.googleusercontent.com/uZyDlyBf-OgQCjJh80mNVa-RcA5aM490-yxLZ_vZRN2364fa6pKhWjKi2eXSNilLWydijIwTLkQOk15FFxhN',
+      'https://play-lh.googleusercontent.com/vahfW-qMitfgI-hXyB66UzuYzLJTq0uPB5xWjJW5MGj30JrVIIzR53cCks1rG4-ezVoxHhushxVc_qQ1ppxtMw',
+    ],
   },
   {
     name: 'GoPay',
@@ -157,6 +174,13 @@ export const projects = [
     metric: '100M+ downloads · 4.7★',
     tags: ['Flutter', 'Dart', 'MVVM', 'Multi-Module', 'Clean Arch'],
     link: 'https://play.google.com/store/apps/details?id=com.gojek.gopay&hl=id',
+    icon: 'https://play-lh.googleusercontent.com/59Ki9Tfvibd_cfaojyVuu-zFlKzdCfRKuwi81z5PM7OF44SBXwb5xufpMqoTU5Rrx0P_FZmalR-eDJzWBwxcLQ',
+    shots: [
+      'https://play-lh.googleusercontent.com/nZjXoeqfwv8kFUX5sNi3pvng8k8kam47Ur38-Tp6LpVguSTDzBCzbavj1PBT1lyJyfP6U1szai80_5wF6HLxCg',
+      'https://play-lh.googleusercontent.com/nXrqSDUVtbjIH-duOcw-910VllixaNZbn0VPdq-oR18f20ZxY3T4oV3BIXxOiHYWnsVWLms2SW8edBjgHl98Jw',
+      'https://play-lh.googleusercontent.com/pfbGAg81RRJyD_vSJmylhkbdo-1eUuID27kykNSc73LjhRMFRRuYxOpFZ-gQcS19nIg2aWHbh9j27MtaEZxSPQ',
+      'https://play-lh.googleusercontent.com/OljCIssPlRj7_GHUQCMDjpc6lUxb3MIQ7FXjNlVGC8DtwHI9I5lC8ziEHM2Pdjmvf4PnO8j-58adpnRGsZ1kAA',
+    ],
   },
   {
     name: 'TIX ID',
@@ -164,6 +188,13 @@ export const projects = [
     metric: '10M+ downloads · 4.8★',
     tags: ['Kotlin', 'Java', 'Room', 'RxJava2', 'Dagger2', 'Retrofit', 'MVP', 'Clean Arch'],
     link: 'https://play.google.com/store/apps/details?id=id.tix.android&hl=en',
+    icon: 'https://play-lh.googleusercontent.com/sQgkU8eGZcZZI42fADthcZGRpfFTsCrOotKgQWFbwzPURnYD2e6fj4Cr20oXwKyBoApSkdbBqmpta26cCslZxA',
+    shots: [
+      'https://play-lh.googleusercontent.com/ef-mpRKMswQ27ESxo01p0Yq0NmyL4ugC1qyjIpKolnFteZazB3OBj9wvXcwvRyP8lt7FmckYDZ_xkeGgEIQypjY',
+      'https://play-lh.googleusercontent.com/_ixoV6JLXi8w_rz7PsgWBZxojp1pQyhVvlq8ai2Tp0Hnb1lVrRiu0WSvb0UBP9Y-H9Fgns20O4gVt62I00aVUw',
+      'https://play-lh.googleusercontent.com/13q_tR4xs7nlHRrCIx5A4CSRz9Ktx71W09y00tXUgfYazT8G6DnGR-5ibDeJi86NpWzwNB5I1mAt05oy4Yxo',
+      'https://play-lh.googleusercontent.com/fAJ2J3Ll-KJIW3l1mYgK5FcgljeP_sl_RDbx35YwvbLik_syUd41Bgpf76Us3_Bp7-0bRpb4VXZnHasZT2b_NA',
+    ],
   },
   {
     name: 'DANA',
@@ -171,6 +202,13 @@ export const projects = [
     metric: '100M+ downloads · 4.7★',
     tags: ['Java', 'Room', 'RxJava2', 'Dagger2', 'Retrofit', 'MVP', 'Clean Arch'],
     link: 'https://play.google.com/store/apps/details?id=id.dana&hl=en',
+    icon: 'https://play-lh.googleusercontent.com/3pjYaXJAV8Q05NwQbvsGCnkflnR8Sh_5xLoj92Uq5ptmnn2nbfp0WrCzKPPyI3eYpMz1f8mxd-RWm-1NrWzhPQ',
+    shots: [
+      'https://play-lh.googleusercontent.com/iYY5f9xVbtmEBjxyE9uRerMFv87FD8oewexC-0tyVt_lK0Ut-P-zMUkYffXaSId0ZBjLBDEfL4lVV-cpP42YoQ',
+      'https://play-lh.googleusercontent.com/91Rlr7q0ImMSh55DV3h8VECOxdBCdeGG4XR6IaYb00Fqcde8Kk0kUlO5qK66Q168slzxWgY_EghZ7Mrsg0CC',
+      'https://play-lh.googleusercontent.com/yEYFJavQY0NrQsJbgsFaTVREB_HIlcoUB3uNvcg6AivS1C4tV9fC_6AOmxuLuu1EUqse1Iu7Z2MGGhAnyeajBrs',
+      'https://play-lh.googleusercontent.com/wANGt80v6s2c2jRIpK5IKunZcQExTPlySBGNPl8ZUUsw_C5WhREf0ySXw0no3T993PBoYC7kgtgkpbLgLa_i-g',
+    ],
   },
   {
     name: 'PayPro',

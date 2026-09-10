@@ -198,9 +198,37 @@ export default function Page() {
                   className="reveal card flex flex-col rounded-2xl border border-line bg-ink-2 p-6"
                   style={{ '--d': `${i * 60}ms` }}
                 >
-                  <h3 className="font-medium">{p.name}</h3>
-                  <p className="mt-1 font-mono text-xs text-accent">{p.metric}</p>
-                  <p className="mt-3 grow text-sm text-muted">{p.description}</p>
+                  <div className="flex items-center gap-3">
+                    {p.icon && (
+                      <img
+                        src={`${p.icon}=w96`}
+                        alt=""
+                        width={40}
+                        height={40}
+                        loading="lazy"
+                        className="size-10 shrink-0 rounded-xl border border-line"
+                      />
+                    )}
+                    <div>
+                      <h3 className="font-medium">{p.name}</h3>
+                      <p className="mt-0.5 font-mono text-xs text-accent">{p.metric}</p>
+                    </div>
+                  </div>
+                  {p.shots?.length > 0 && (
+                    <ul className="-mx-6 mt-5 flex snap-x gap-3 overflow-x-auto px-6 pb-2">
+                      {p.shots.map((src, n) => (
+                        <li key={src} className="shrink-0 snap-start">
+                          <img
+                            src={`${src}=w320`}
+                            alt={`${p.name} screenshot ${n + 1}`}
+                            loading="lazy"
+                            className="h-56 w-auto rounded-xl border border-line bg-ink"
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  <p className="mt-4 grow text-sm text-muted">{p.description}</p>
                   <ul className="mt-5 flex flex-wrap gap-1.5">
                     {p.tags.map((t) => (
                       <li key={t} className="rounded-md bg-accent/10 px-2 py-0.5 font-mono text-xs text-accent">
