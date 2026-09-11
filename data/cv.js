@@ -50,11 +50,11 @@ export const skills = [
     items: ['Kotlin', 'Jetpack Compose', 'MVVM', 'MVI', 'Coroutines', 'Flow', 'Multi-Module Architecture', 'Clean Architecture'],
   },
   {
-    group: 'Cross-Platform',
-    items: ['Kotlin Multiplatform', 'Flutter', 'Dart', 'Cordova', 'Ionic', 'State Management'],
+    group: 'Cross-Platform & iOS',
+    items: ['Kotlin Multiplatform', 'Swift', 'SwiftUI', 'Flutter', 'Dart', 'Cordova', 'Ionic'],
   },
   { group: 'Backend', items: ['Java', 'Spring Boot', 'Python', 'C#', 'Unit Test', 'Integration Test'] },
-  { group: 'Web', items: ['JavaScript', 'React', 'AngularJS', 'PHP', 'HTML', 'SQL', 'Git'] },
+  { group: 'Web', items: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind', 'AngularJS', 'PHP', 'SQL'] },
 ]
 
 export const experience = [
@@ -137,11 +137,11 @@ export const education = [
 // they are normalised, so they do not have to add up to exactly 100.
 // Keep it to 6 entries — past that a donut stops being readable.
 export const languages = [
-  { name: 'Kotlin', value: 52 },
-  { name: 'Java', value: 26 },
+  { name: 'Kotlin', value: 50 },
+  { name: 'Java', value: 24 },
   { name: 'Dart', value: 8 },
-  { name: 'JavaScript', value: 5 },
-  { name: 'Python', value: 3 },
+  { name: 'JavaScript · TypeScript', value: 8 },
+  { name: 'Swift', value: 4 },
   { name: 'Other', value: 6 },
 ]
 
@@ -263,10 +263,11 @@ export const awards = [
 
 // Public GitHub repos — side experiments, shown as a compact list.
 export const openSource = [
+  { name: 'daily-projects', blurb: 'A small app a night, built by a scheduled agent — Android, iOS, backend, web', year: '2026' },
+  { name: 'web-currency-converter', blurb: 'React and TypeScript converter over mock rate fixtures', year: '2026' },
+  { name: 'ios-habit-tracker', blurb: 'SwiftUI habit tracker with streaks', year: '2026' },
+  { name: 'android-pomodoro-timer', blurb: 'Focus and break countdowns with session history, in Kotlin', year: '2026' },
+  { name: 'weekly-checklist', blurb: 'React and Vite over Express and SQLite, one process in production', year: '2026' },
   { name: 'pokemon-kotlin-multiplatform-mobile', blurb: 'Shared Kotlin logic driving native Android and iOS', year: '2026' },
-  { name: 'weekly-checklist', blurb: 'React + Express + SQLite task board', year: '2026' },
   { name: 'flutter_api_restaurant_sample', blurb: 'Flutter client over a REST API', year: '2024' },
-  { name: 'DesignPattern-Kotlin', blurb: 'GoF patterns written idiomatically in Kotlin', year: '2017' },
-  { name: 'KumpulinSampah', blurb: 'Android app for collecting and trading recyclable waste', year: '2016' },
-  { name: 'Web-DSS-AHP', blurb: 'Decision support system using Analytic Hierarchy Process', year: '2019' },
 ]
