@@ -10,7 +10,7 @@ const NAV = [
   ['Contact', 'contact'],
 ]
 
-export default function SiteNav({ primaryHref, primaryLabel }) {
+export default function SiteNav({ links = [] }) {
   const [active, setActive] = useState('')
   const [open, setOpen] = useState(false)
   const [progress, setProgress] = useState(0)
@@ -83,14 +83,17 @@ export default function SiteNav({ primaryHref, primaryLabel }) {
         </div>
 
         <div className="flex items-center gap-3">
-          <a
-            href={primaryHref}
-            target="_blank"
-            rel="noreferrer"
-            className="focus-ring hidden rounded-full border border-line px-4 py-1.5 text-sm text-muted transition-colors hover:border-accent/50 hover:text-fg sm:block"
-          >
-            {primaryLabel}
-          </a>
+          {links.map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              className="focus-ring hidden rounded-full border border-line px-4 py-1.5 text-sm text-muted transition-colors hover:border-accent/50 hover:text-fg sm:block"
+            >
+              {label}
+            </a>
+          ))}
 
           <button
             type="button"
@@ -127,15 +130,18 @@ export default function SiteNav({ primaryHref, primaryLabel }) {
       >
         <div className="flex flex-col gap-1 px-6 py-4">
           {NAV.map(([label, id]) => link(label, id, 'py-2 text-base'))}
-          <a
-            href={primaryHref}
-            target="_blank"
-            rel="noreferrer"
-            onClick={() => setOpen(false)}
-            className="nav-link py-2 text-base"
-          >
-            {primaryLabel} ↗
-          </a>
+          {links.map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setOpen(false)}
+              className="nav-link py-2 text-base"
+            >
+              {label} ↗
+            </a>
+          ))}
         </div>
       </div>
 

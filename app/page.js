@@ -24,8 +24,10 @@ export default function Page() {
   return (
     <>
       <SiteNav
-        primaryHref={profile.linkedin || profile.github}
-        primaryLabel={profile.linkedin ? 'LinkedIn' : 'GitHub'}
+        links={[
+          profile.linkedin && { href: profile.linkedin, label: 'LinkedIn' },
+          profile.github && { href: profile.github, label: 'GitHub' },
+        ].filter(Boolean)}
       />
 
       <main id="top" className="mx-auto max-w-5xl px-6">
