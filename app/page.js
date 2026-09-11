@@ -81,7 +81,7 @@ export default function Page() {
               <a
                 href={profile.linkedin}
                 target="_blank"
-                rel="noreferrer"
+                rel="me noreferrer"
                 className="rounded-full border border-line px-5 py-2.5 text-sm text-muted transition-colors hover:border-accent/50 hover:text-fg"
               >
                 LinkedIn
@@ -326,16 +326,22 @@ export default function Page() {
               >
                 {profile.email}
               </a>
-              {profile.linkedin && (
-                <a
-                  href={profile.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-line px-6 py-3 text-sm text-muted transition-colors hover:border-accent/50 hover:text-fg"
-                >
-                  LinkedIn
-                </a>
-              )}
+              {[
+                profile.linkedin && { href: profile.linkedin, label: 'LinkedIn' },
+                profile.github && { href: profile.github, label: 'GitHub' },
+              ]
+                .filter(Boolean)
+                .map(({ href, label }) => (
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="me noreferrer"
+                    className="rounded-full border border-line px-6 py-3 text-sm text-muted transition-colors hover:border-accent/50 hover:text-fg"
+                  >
+                    {label}
+                  </a>
+                ))}
               {profile.phone && (
                 <a
                   href={`tel:${profile.phone.replace(/\s|-/g, '')}`}

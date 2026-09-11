@@ -88,7 +88,7 @@ export default function SiteNav({ links = [] }) {
               key={href}
               href={href}
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
               className="focus-ring hidden rounded-full border border-line px-4 py-1.5 text-sm text-muted transition-colors hover:border-accent/50 hover:text-fg sm:block"
             >
               {label}
@@ -135,7 +135,7 @@ export default function SiteNav({ links = [] }) {
               key={href}
               href={href}
               target="_blank"
-              rel="noreferrer"
+              rel="me noreferrer"
               onClick={() => setOpen(false)}
               className="nav-link py-2 text-base"
             >
