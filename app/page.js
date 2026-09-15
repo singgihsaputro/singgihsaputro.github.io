@@ -247,7 +247,7 @@ export default function Page() {
           {/* side projects, compact */}
           <div className="reveal mt-14">
             <h3 className="mb-5 font-mono text-xs tracking-[0.15em] text-accent uppercase">
-              Recent repositories
+              Highlighted projects
             </h3>
             <ul className="divide-y divide-line border-y border-line">
               {repos.map((r) => (
@@ -265,7 +265,9 @@ export default function Page() {
                     {r.language && (
                       <span className="font-mono text-xs text-accent">{r.language}</span>
                     )}
-                    <span className="font-mono text-xs text-muted">{r.pushed}</span>
+                    {r.stars > 0 && (
+                      <span className="font-mono text-xs text-muted">★ {r.stars}</span>
+                    )}
                   </a>
                 </li>
               ))}

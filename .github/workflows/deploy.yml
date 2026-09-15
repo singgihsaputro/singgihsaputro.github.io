@@ -3,8 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # Rebuild daily so the recent-repositories list keeps up with the nightly
-  # project agent, which publishes a new repository most days.
+  # Rebuild daily so stars and languages on the highlighted projects stay current.
   schedule:
     - cron: '20 2 * * *' # 09:20 Asia/Jakarta
   workflow_dispatch:
@@ -28,9 +27,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      # Refresh the recent-repositories list. Non-fatal: if GitHub is
+      # Refresh metadata for the highlighted projects. Non-fatal: if GitHub is
       # unreachable the committed data/repos.json is used instead.
-      - run: node scripts/latest-repos.mjs
+      - run: node scripts/highlight-repos.mjs
         continue-on-error: true
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3

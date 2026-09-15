@@ -1,17 +1,17 @@
 [
   {
-    "name": "daily-projects",
-    "blurb": "A small app a night, built by a scheduled cloud agent — Android, iOS, backend, web",
+    "name": "pokemon-kotlin-multiplatform-mobile",
+    "blurb": "Kotlin Multiplatform sample sharing business logic across Android and iOS",
     "language": "Kotlin",
     "stars": 0,
-    "pushed": "2026-09-14"
+    "pushed": "2026-08-31"
   },
   {
-    "name": "android-water-intake-log",
-    "blurb": "A single-screen Android app that logs drinks against a daily water goal, built with Jetpack Compose and Material 3.",
+    "name": "android-pomodoro-timer",
+    "blurb": "A single-screen Android Pomodoro timer: pick a preset, run alternating focus/break countdowns, and track completed sessions.",
     "language": "Kotlin",
     "stars": 0,
-    "pushed": "2026-09-14"
+    "pushed": "2026-09-09"
   },
   {
     "name": "ios-habit-tracker",
@@ -21,17 +21,17 @@
     "pushed": "2026-09-14"
   },
   {
-    "name": "kmp-reading-tracker",
-    "blurb": "Kotlin Multiplatform reading tracker: shared Kotlin business logic, Compose Android UI, mock JSON fixture",
-    "language": "Kotlin",
-    "stars": 0,
-    "pushed": "2026-09-13"
-  },
-  {
     "name": "backend-expense-splitter",
     "blurb": "A Go backend that splits shared group expenses and computes minimal settlements",
     "language": "Go",
     "stars": 0,
     "pushed": "2026-09-12"
+  },
+  {
+    "name": "WebChat-BottlePython",
+    "blurb": "Web chat built on Bottle, Python’s micro web framework",
+    "language": "Python",
+    "stars": 2,
+    "pushed": "2016-04-19"
   }
 ]
