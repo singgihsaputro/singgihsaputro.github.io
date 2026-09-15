@@ -262,13 +262,3 @@ export const awards = [
   },
 ]
 
-// Public GitHub repos — side experiments, shown as a compact list.
-export const openSource = [
-  { name: 'daily-projects', blurb: 'A small app a night, built by a scheduled agent — Android, iOS, backend, web', year: '2026' },
-  { name: 'web-currency-converter', blurb: 'React and TypeScript converter over mock rate fixtures', year: '2026' },
-  { name: 'ios-habit-tracker', blurb: 'SwiftUI habit tracker with streaks', year: '2026' },
-  { name: 'android-pomodoro-timer', blurb: 'Focus and break countdowns with session history, in Kotlin', year: '2026' },
-  { name: 'weekly-checklist', blurb: 'React and Vite over Express and SQLite, one process in production', year: '2026' },
-  { name: 'pokemon-kotlin-multiplatform-mobile', blurb: 'Shared Kotlin logic driving native Android and iOS', year: '2026' },
-  { name: 'flutter_api_restaurant_sample', blurb: 'Flutter client over a REST API', year: '2024' },
-]

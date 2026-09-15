@@ -3,8 +3,9 @@ import SiteNav from '@/components/SiteNav'
 import CardSpotlight from '@/components/CardSpotlight'
 import LanguageDonut from '@/components/LanguageDonut'
 import {
-  profile, stats, skills, experience, education, projects, awards, openSource, languages,
+  profile, stats, skills, experience, education, projects, awards, languages,
 } from '@/data/cv'
+import repos from '@/data/repos.json'
 
 
 function SectionHead({ n, label, title, sub }) {
@@ -246,10 +247,10 @@ export default function Page() {
           {/* side projects, compact */}
           <div className="reveal mt-14">
             <h3 className="mb-5 font-mono text-xs tracking-[0.15em] text-accent uppercase">
-              Also on GitHub
+              Recent repositories
             </h3>
             <ul className="divide-y divide-line border-y border-line">
-              {openSource.map((r) => (
+              {repos.map((r) => (
                 <li key={r.name}>
                   <a
                     href={`${profile.github}/${r.name}`}
@@ -261,7 +262,10 @@ export default function Page() {
                       {r.name}
                     </span>
                     <span className="grow text-sm text-muted">{r.blurb}</span>
-                    <span className="font-mono text-xs text-muted">{r.year}</span>
+                    {r.language && (
+                      <span className="font-mono text-xs text-accent">{r.language}</span>
+                    )}
+                    <span className="font-mono text-xs text-muted">{r.pushed}</span>
                   </a>
                 </li>
               ))}

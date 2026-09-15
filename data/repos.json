@@ -1,0 +1,37 @@
+[
+  {
+    "name": "daily-projects",
+    "blurb": "A small app a night, built by a scheduled cloud agent — Android, iOS, backend, web",
+    "language": "Kotlin",
+    "stars": 0,
+    "pushed": "2026-09-14"
+  },
+  {
+    "name": "android-water-intake-log",
+    "blurb": "A single-screen Android app that logs drinks against a daily water goal, built with Jetpack Compose and Material 3.",
+    "language": "Kotlin",
+    "stars": 0,
+    "pushed": "2026-09-14"
+  },
+  {
+    "name": "ios-habit-tracker",
+    "blurb": "A single-screen SwiftUI habit tracker with streaks and mock data",
+    "language": "Swift",
+    "stars": 0,
+    "pushed": "2026-09-14"
+  },
+  {
+    "name": "kmp-reading-tracker",
+    "blurb": "Kotlin Multiplatform reading tracker: shared Kotlin business logic, Compose Android UI, mock JSON fixture",
+    "language": "Kotlin",
+    "stars": 0,
+    "pushed": "2026-09-13"
+  },
+  {
+    "name": "backend-expense-splitter",
+    "blurb": "A Go backend that splits shared group expenses and computes minimal settlements",
+    "language": "Go",
+    "stars": 0,
+    "pushed": "2026-09-12"
+  }
+]
