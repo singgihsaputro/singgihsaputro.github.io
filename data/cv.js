@@ -26,8 +26,10 @@ export const profile = {
   // Set it here only if you want it visible: phone: '+62 857-9147-6203',
   phone: '',
   avatar: 'https://avatars.githubusercontent.com/u/3947112?v=4',
-  // Served from public/. Note this PDF carries your phone number — that is deliberate.
-  resume: '/singgih-rochmad-saputro-cv.pdf',
+  // Empty hides the Download CV button. The PDF is no longer hosted either — it
+  // carried a phone number, and a file left in public/ stays fetchable by URL
+  // whether or not anything links to it.
+  resume: '',
   // Google Search Console → Add property → URL prefix → HTML tag.
   // Paste ONLY the content="..." value here, not the whole <meta> tag.
   googleVerification: 'wQAwigQgaZOa-cfUvERPjF-qh3TtQ2qyRFKcUpqtEBo',
