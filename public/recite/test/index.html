@@ -131,6 +131,7 @@ const log = []
 let quran = null
 let surahNo = 1, mode = 'verse', verseNo = 1
 let rec = null, want = false, heard = '', current = '', quiet = 0, attempt = null, watchdog = 0
+let paused = false, lastError = null, qariAudio = null
 
 // ── This phone ──────────────────────────────────────────────────────────────
 const put = (id, text, good) => { $(id).textContent = text; $(id).className = good ? 'ok' : 'bad' }
@@ -192,6 +193,7 @@ function render(result = null, final = false) {
 }
 
 function reset() {
+  paused = false
   stopListening()
   heard = current = ''
   $('heard').textContent = ''
@@ -223,6 +225,8 @@ function kick() {
 }
 
 function start() {
+  qariAudio?.pause() // or the recogniser hears the qari
+  paused = false
   heard = current = ''
   quiet = 0
   want = true
@@ -235,10 +239,13 @@ function start() {
 
 function session() {
   const before = heard
+  lastError = null
   rec = new Recognition()
   rec.lang = 'ar-SA'
   rec.interimResults = true
-  rec.continuous = mode === 'surah'
+  // Always one utterance per session: iOS aborts continuous listening, and
+  // Chrome on Android repeats words in it. A whole surah chains sessions.
+  rec.continuous = false
   rec.maxAlternatives = 1
   attempt.sessions++
   rec.onstart = () => { $('mic').classList.add('on'); $('mic').setAttribute('aria-label', 'Stop'); status('Listening… recite now') }
@@ -253,6 +260,7 @@ function session() {
   }
   rec.onerror = e => {
     attempt.errors.push(e.error)
+    lastError = e.error
     if (e.error !== 'no-speech' && e.error !== 'aborted') { want = false; status(explain(e.error)) }
   }
   // Safari ends a session at a pause. In whole-surah mode keep going until the
@@ -261,6 +269,15 @@ function session() {
     heard = `${heard} ${current}`.trim()
     current = ''
     quiet = heard === before ? quiet + 1 : 0
+    // The phone may refuse to reopen the mic without a tap. Pause, keep what
+    // was heard, and let the next tap carry on.
+    if (mode === 'surah' && heard && attempt.sessions > 1 && (lastError === 'not-allowed' || lastError === 'service-not-allowed')) {
+      paused = true
+      attempt.pauses = (attempt.pauses ?? 0) + 1
+      stopListening()
+      status('Paused — tap the mic to carry on')
+      return
+    }
     const last = match(expected(), heard).words.at(-1)?.status === 'correct'
     if (want && mode === 'surah' && !last && quiet < 2) session()
     else finish()
@@ -301,7 +318,9 @@ function finish() {
 
 $('mic').onclick = () => {
   if (!Recognition) return
-  if (rec) { want = false; rec.stop() } else start()
+  if (rec) { want = false; rec.stop() }
+  else if (paused) { paused = false; want = true; quiet = 0; session() }
+  else start()
 }
 
 // ── Sound ───────────────────────────────────────────────────────────────────
@@ -309,7 +328,8 @@ const sound = text => { $('sound-status').textContent = text }
 $('qari').onclick = () => {
   const v = targets()[0]
   const url = `https://everyayah.com/data/Husary_Muallim_128kbps/${String(surahNo).padStart(3, '0')}${String(v.number).padStart(3, '0')}.mp3`
-  const audio = new Audio(url)
+  qariAudio?.pause()
+  const audio = qariAudio = new Audio(url)
   sound('Loading the qari…')
   audio.onplaying = () => { sound(`▶ Qari: ${surahNo}:${v.number}`); log.push({ at: new Date().toLocaleString(), ref: 'qari audio', result: 'played' }); writeReport() }
   audio.onerror = () => { sound('❌ The qari could not play — is the internet on?'); log.push({ at: new Date().toLocaleString(), ref: 'qari audio', result: 'failed' }); writeReport() }
@@ -337,7 +357,7 @@ function writeReport() {
   ].join('\n')
   const lines = log.map(a => a.heard === undefined
     ? `${a.at} · ${a.ref}: ${a.result}`
-    : `${a.at} · ${a.ref} · ${a.score} ★${a.stars} · sessions ${a.sessions} · errors [${a.errors.join(', ')}]\n  heard: ${a.heard || '(nothing)'}\n  slips: ${a.misses.join(' | ') || 'none'}`)
+    : `${a.at} · ${a.ref} · ${a.score} ★${a.stars} · sessions ${a.sessions} · pauses ${a.pauses ?? 0} · errors [${a.errors.join(', ')}]\n  heard: ${a.heard || '(nothing)'}\n  slips: ${a.misses.join(' | ') || 'none'}`)
   $('report').value = [head, ...lines].join('\n\n')
 }
 $('copy').onclick = async () => {
