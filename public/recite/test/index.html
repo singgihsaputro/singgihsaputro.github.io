@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#6A4CFF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Recite">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Nunito:wght@600;800;900&display=swap" rel="stylesheet">
+<title>Recite Quest test</title>
+<style>
+  :root {
+    --grape: #6A4CFF; --sun: #FFC53D; --ink: #2B2250; --muted: #6B6690;
+    --correct: #0E9F77; --misread: #E8590C; --missed: #8C87A8; --soft: #F1EEFF;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    background: linear-gradient(#6A4CFF, #8E7BFF 55%, #5CC8FF) fixed;
+    color: var(--ink);
+    font-family: Nunito, system-ui, sans-serif;
+    padding: max(16px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+  }
+  main { max-width: 560px; margin: 0 auto; display: grid; gap: 14px; }
+  h1 { color: #fff; font-size: 28px; font-weight: 900; margin: 8px 0 0; }
+  .lead { color: rgba(255,255,255,.92); margin: 4px 0 4px; }
+  .card { background: #fff; border-radius: 24px; padding: 16px 18px; box-shadow: 0 8px 24px rgba(43,34,80,.18); }
+  .card h2 { font-size: 17px; margin: 0 0 10px; color: var(--grape); font-weight: 900; }
+  .row { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px solid #EEE9FF; }
+  .row:first-of-type { border-top: 0; }
+  .row b { font-weight: 800; text-align: right; }
+  .ok { color: var(--correct); } .bad { color: var(--misread); }
+  .seg { display: flex; background: var(--soft); border-radius: 999px; padding: 4px; gap: 4px; margin-bottom: 10px; }
+  .seg button { flex: 1; border: 0; background: transparent; padding: 10px 6px; border-radius: 999px; font: inherit; font-weight: 800; color: var(--muted); }
+  .seg button[aria-pressed=true] { background: var(--grape); color: #fff; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
+  .chips button { border: 0; width: 42px; height: 42px; border-radius: 50%; background: var(--soft); font: inherit; font-weight: 900; color: var(--ink); }
+  .chips button[aria-pressed=true] { background: var(--sun); }
+  .verse { direction: rtl; font-family: 'Amiri Quran', serif; font-size: 28px; line-height: 2.2; text-align: right; margin: 2px 0; }
+  .w { padding: 0 4px; border-radius: 10px; transition: background .3s, color .3s; }
+  .w.correct { color: var(--correct); background: rgba(14,159,119,.12); }
+  .w.misread { color: var(--misread); background: rgba(232,89,12,.12); }
+  .w.missed { color: var(--missed); background: rgba(140,135,168,.15); }
+  .num { font-family: Nunito, sans-serif; font-size: 13px; color: var(--muted); }
+  .mic { display: block; margin: 14px auto 6px; width: 88px; height: 88px; border-radius: 50%; border: 0; background: var(--sun); font-size: 36px; box-shadow: 0 0 0 10px rgba(255,197,61,.28); }
+  .mic.on { background: var(--misread); animation: pulse 1.2s infinite; }
+  @keyframes pulse { 50% { box-shadow: 0 0 0 18px rgba(232,89,12,.18); } }
+  .status { text-align: center; color: var(--muted); font-weight: 700; min-height: 1.4em; margin: 6px 0; }
+  .heard { direction: rtl; text-align: right; background: #F7F5FF; border-radius: 14px; padding: 10px 12px; min-height: 46px; font-size: 18px; }
+  .heard:empty::before { content: 'ما سمعه Safari'; color: #C9C4DE; }
+  .score { text-align: center; margin-top: 8px; }
+  .stars { font-size: 46px; letter-spacing: 4px; color: var(--sun); line-height: 1.1; }
+  .stars .off { color: #E3E0EF; }
+  .big { font-size: 40px; font-weight: 900; color: var(--grape); }
+  .btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn { border: 0; border-radius: 999px; padding: 11px 16px; font: inherit; font-weight: 800; background: var(--soft); color: var(--ink); }
+  .btn.primary { background: var(--grape); color: #fff; }
+  textarea { width: 100%; min-height: 150px; border-radius: 14px; border: 1px solid #E3E0EF; padding: 10px; font: 12px ui-monospace, Menlo, monospace; color: var(--ink); }
+  .note { color: rgba(255,255,255,.95); font-size: 14px; text-align: center; margin: 0 8px; }
+  button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>🌙 Recite Quest</h1>
+    <p class="lead">iPhone test: can Safari hear Arabic recitation on this phone?</p>
+  </header>
+
+  <section class="card" aria-labelledby="env-h">
+    <h2 id="env-h">This phone</h2>
+    <div class="row"><span>Speech recognition</span><b id="env-sr">…</b></div>
+    <div class="row"><span>Opened from</span><b id="env-mode">…</b></div>
+    <div class="row"><span>Indonesian voice</span><b id="env-id">…</b></div>
+    <div class="row"><span>iOS</span><b id="env-os">…</b></div>
+  </section>
+
+  <section class="card" aria-labelledby="rec-h">
+    <h2 id="rec-h">1 · Recite</h2>
+    <div class="seg" role="group" aria-label="Surah" id="surahs">
+      <button data-surah="1" aria-pressed="true">Al-Fatihah</button>
+      <button data-surah="112" aria-pressed="false">Al-Ikhlas</button>
+    </div>
+    <div class="seg" role="group" aria-label="Mode" id="modes">
+      <button data-mode="verse" aria-pressed="true">📖 One verse</button>
+      <button data-mode="surah" aria-pressed="false">🕌 Whole surah</button>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Verse"></div>
+    <div id="text"></div>
+    <button class="mic" id="mic" aria-label="Recite">🎙</button>
+    <p class="status" id="status" aria-live="polite">Loading the verses…</p>
+    <div class="heard" id="heard" aria-label="What Safari heard"></div>
+    <div class="score" id="score" hidden></div>
+  </section>
+
+  <section class="card" aria-labelledby="snd-h">
+    <h2 id="snd-h">2 · Sound</h2>
+    <div class="btns">
+      <button class="btn" id="qari">🔊 Qari recites the verse</button>
+      <button class="btn" id="voice">🗣️ Indonesian story voice</button>
+    </div>
+    <p class="status" id="sound-status" aria-live="polite"></p>
+  </section>
+
+  <section class="card" aria-labelledby="rep-h">
+    <h2 id="rep-h">3 · Report</h2>
+    <p style="margin-top:0">Every attempt is logged here. Copy it and send it back.</p>
+    <textarea id="report" readonly aria-label="Report"></textarea>
+    <div class="btns"><button class="btn primary" id="copy">Copy report</button></div>
+  </section>
+
+  <p class="note">Then add this page to the Home Screen (Share → Add to Home Screen), open it from the icon, and recite once more — speech recognition has behaved differently there.</p>
+</main>
+
+<script type="module">
+import { match, displayWords, words } from '../matcher.js'
+
+const $ = id => document.getElementById(id)
+const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition
+const synth = window.speechSynthesis
+const standalone = navigator.standalone === true || matchMedia('(display-mode: standalone)').matches
+const log = []
+
+let quran = null
+let surahNo = 1, mode = 'verse', verseNo = 1
+let rec = null, want = false, heard = '', current = '', quiet = 0, attempt = null, watchdog = 0
+
+// ── This phone ──────────────────────────────────────────────────────────────
+const put = (id, text, good) => { $(id).textContent = text; $(id).className = good ? 'ok' : 'bad' }
+put('env-sr', Recognition ? '✅ available' : '❌ not available', !!Recognition)
+$('env-mode').textContent = standalone ? 'Home Screen icon' : 'Safari tab'
+$('env-os').textContent = navigator.userAgent.match(/OS (\d+(?:_\d+)*)/)?.[1]?.replaceAll('_', '.') ?? 'not iOS'
+function indonesianVoices() {
+  const found = synth ? synth.getVoices().filter(v => v.lang.replace('_', '-').toLowerCase().startsWith('id')) : []
+  put('env-id', found.length ? `✅ ${found.length} voice${found.length > 1 ? 's' : ''}` : '❌ none found', found.length > 0)
+  return found
+}
+if (synth) synth.onvoiceschanged = indonesianVoices
+indonesianVoices()
+
+// ── Verses ──────────────────────────────────────────────────────────────────
+const surah = () => quran.find(s => s.number === surahNo)
+const targets = () => mode === 'surah' ? surah().verses : [surah().verses[verseNo - 1]]
+const expected = () => targets().map(v => v.arabic).join(' ')
+const status = text => { $('status').textContent = text }
+
+function pressed(group, attr, value) {
+  for (const b of $(group).querySelectorAll('button')) b.setAttribute('aria-pressed', String(b.dataset[attr] === String(value)))
+}
+
+function chips() {
+  $('chips').hidden = mode === 'surah'
+  $('chips').innerHTML = ''
+  for (const v of surah().verses) {
+    const b = document.createElement('button')
+    b.textContent = v.number
+    b.setAttribute('aria-label', `Verse ${v.number}`)
+    b.setAttribute('aria-pressed', String(v.number === verseNo))
+    b.onclick = () => { verseNo = v.number; reset() }
+    $('chips').append(b)
+  }
+}
+
+/** Draws the verse(s); after a result, each word takes its colour. Mid-recitation only heard words light up. */
+function render(result = null, final = false) {
+  $('text').innerHTML = ''
+  let at = 0
+  for (const v of targets()) {
+    const p = document.createElement('p')
+    p.className = 'verse'
+    displayWords(v.arabic).forEach((word, i) => {
+      const s = result?.words[at + i]?.status
+      const span = document.createElement('span')
+      span.className = 'w' + (s && (final || s === 'correct') ? ' ' + s : '')
+      span.textContent = word
+      p.append(span, ' ')
+    })
+    const n = document.createElement('span')
+    n.className = 'num'
+    n.textContent = `﴿${v.number}﴾`
+    p.append(n)
+    $('text').append(p)
+    at += words(v.arabic).length
+  }
+}
+
+function reset() {
+  stopListening()
+  heard = current = ''
+  $('heard').textContent = ''
+  $('score').hidden = true
+  chips()
+  render()
+  status(Recognition ? (mode === 'surah' ? 'Tap the mic and recite the whole surah' : `Tap the mic and recite verse ${verseNo}`)
+    : 'This browser has no speech recognition, so it cannot listen.')
+}
+
+$('surahs').onclick = e => { const b = e.target.closest('button'); if (!b) return; surahNo = +b.dataset.surah; verseNo = 1; pressed('surahs', 'surah', surahNo); reset() }
+$('modes').onclick = e => { const b = e.target.closest('button'); if (!b) return; mode = b.dataset.mode; pressed('modes', 'mode', mode); reset() }
+
+// ── Listening ───────────────────────────────────────────────────────────────
+function explain(error) {
+  return {
+    'not-allowed': 'Microphone permission is off: Settings → Safari → Microphone → Allow.',
+    'service-not-allowed': 'Speech recognition is off: Settings → General → Keyboard → Enable Dictation, and Settings → Privacy & Security → Speech Recognition.',
+    'language-not-supported': 'Arabic is not available for dictation on this phone.',
+    'network': 'Speech recognition needs the internet.',
+    'audio-capture': 'No microphone was found.',
+  }[error] ?? `Stopped: ${error}`
+}
+
+// No word for 15 seconds means something is stuck.
+function kick() {
+  clearTimeout(watchdog)
+  watchdog = setTimeout(() => { attempt?.errors.push('timeout'); want = false; rec?.abort() }, 15000)
+}
+
+function start() {
+  heard = current = ''
+  quiet = 0
+  want = true
+  attempt = { at: new Date().toLocaleString(), ref: mode === 'surah' ? `${surahNo} (whole)` : `${surahNo}:${verseNo}`, sessions: 0, errors: [] }
+  $('score').hidden = true
+  $('heard').textContent = ''
+  render()
+  session()
+}
+
+function session() {
+  const before = heard
+  rec = new Recognition()
+  rec.lang = 'ar-SA'
+  rec.interimResults = true
+  rec.continuous = mode === 'surah'
+  rec.maxAlternatives = 1
+  attempt.sessions++
+  rec.onstart = () => { $('mic').classList.add('on'); $('mic').setAttribute('aria-label', 'Stop'); status('Listening… recite now') }
+  rec.onresult = e => {
+    current = Array.from(e.results, r => r[0].transcript).join(' ')
+    const text = `${heard} ${current}`.trim()
+    $('heard').textContent = text
+    const live = match(expected(), text)
+    render(live)
+    status(`Listening… ${live.correct} of ${live.total} words`)
+    kick()
+  }
+  rec.onerror = e => {
+    attempt.errors.push(e.error)
+    if (e.error !== 'no-speech' && e.error !== 'aborted') { want = false; status(explain(e.error)) }
+  }
+  // Safari ends a session at a pause. In whole-surah mode keep going until the
+  // last word is heard or two sessions in a row bring nothing new.
+  rec.onend = () => {
+    heard = `${heard} ${current}`.trim()
+    current = ''
+    quiet = heard === before ? quiet + 1 : 0
+    const last = match(expected(), heard).words.at(-1)?.status === 'correct'
+    if (want && mode === 'surah' && !last && quiet < 2) session()
+    else finish()
+  }
+  try { rec.start(); kick() } catch (err) { attempt.errors.push(String(err)); finish() }
+}
+
+function stopListening() {
+  want = false
+  clearTimeout(watchdog)
+  // Detach first: a late onend from an abandoned session must not score over a fresh screen.
+  if (rec) { rec.onstart = rec.onresult = rec.onerror = rec.onend = null; rec.abort() }
+  rec = null
+  $('mic').classList.remove('on')
+  $('mic').setAttribute('aria-label', 'Recite')
+}
+
+function finish() {
+  const errorText = $('status').textContent
+  stopListening()
+  const r = match(expected(), heard)
+  render(r, true)
+  Object.assign(attempt, {
+    heard, score: `${r.correct}/${r.total}`, stars: r.stars,
+    misses: r.words.filter(w => w.status !== 'correct').map(w => `${w.expected}→${w.heard ?? '∅'}`),
+  })
+  log.push(attempt)
+  writeReport()
+  if (!heard) {
+    status(attempt.errors.some(e => e !== 'no-speech' && e !== 'aborted') ? errorText : 'Nothing was heard. Try again, a little louder.')
+    return
+  }
+  $('score').hidden = false
+  $('score').innerHTML = `<div class="stars" aria-label="${r.stars} of 3 stars">${'★'.repeat(r.stars)}<span class="off">${'★'.repeat(3 - r.stars)}</span></div>
+    <div class="big">${Math.round(r.accuracy * 100)}</div><div>${r.correct} of ${r.total} words right</div>`
+  status('Tap the mic to try again')
+}
+
+$('mic').onclick = () => {
+  if (!Recognition) return
+  if (rec) { want = false; rec.stop() } else start()
+}
+
+// ── Sound ───────────────────────────────────────────────────────────────────
+const sound = text => { $('sound-status').textContent = text }
+$('qari').onclick = () => {
+  const v = targets()[0]
+  const url = `https://everyayah.com/data/Husary_Muallim_128kbps/${String(surahNo).padStart(3, '0')}${String(v.number).padStart(3, '0')}.mp3`
+  const audio = new Audio(url)
+  sound('Loading the qari…')
+  audio.onplaying = () => { sound(`▶ Qari: ${surahNo}:${v.number}`); log.push({ at: new Date().toLocaleString(), ref: 'qari audio', result: 'played' }); writeReport() }
+  audio.onerror = () => { sound('❌ The qari could not play — is the internet on?'); log.push({ at: new Date().toLocaleString(), ref: 'qari audio', result: 'failed' }); writeReport() }
+  audio.play().catch(err => sound(`❌ ${err.message}`))
+}
+$('voice').onclick = () => {
+  if (!synth) return sound('❌ This browser cannot speak.')
+  const u = new SpeechSynthesisUtterance('Assalamualaikum! Ini suara untuk cerita sebelum tidur. Selamat tidur, mimpi indah.')
+  u.lang = 'id-ID'
+  const v = indonesianVoices()[0]
+  if (v) u.voice = v
+  u.rate = 0.9
+  u.onstart = () => { sound(`▶ Voice: ${v?.name ?? 'default'}`); log.push({ at: new Date().toLocaleString(), ref: 'indonesian voice', result: v?.name ?? 'default voice' }); writeReport() }
+  u.onerror = e => sound(`❌ Voice error: ${e.error}`)
+  synth.cancel()
+  synth.speak(u)
+}
+
+// ── Report ──────────────────────────────────────────────────────────────────
+function writeReport() {
+  const head = [
+    'Recite Quest — iPhone test',
+    navigator.userAgent,
+    `recognition: ${Recognition ? 'yes' : 'no'} · opened from: ${standalone ? 'home screen' : 'safari'} · indonesian voices: ${indonesianVoices().map(v => v.name).join(', ') || 'none'}`,
+  ].join('\n')
+  const lines = log.map(a => a.heard === undefined
+    ? `${a.at} · ${a.ref}: ${a.result}`
+    : `${a.at} · ${a.ref} · ${a.score} ★${a.stars} · sessions ${a.sessions} · errors [${a.errors.join(', ')}]\n  heard: ${a.heard || '(nothing)'}\n  slips: ${a.misses.join(' | ') || 'none'}`)
+  $('report').value = [head, ...lines].join('\n\n')
+}
+$('copy').onclick = async () => {
+  try { await navigator.clipboard.writeText($('report').value); $('copy').textContent = 'Copied ✓' }
+  catch { $('report').select(); document.execCommand('copy'); $('copy').textContent = 'Copied ✓' }
+  setTimeout(() => { $('copy').textContent = 'Copy report' }, 2000)
+}
+
+// ── Start ───────────────────────────────────────────────────────────────────
+try {
+  quran = await (await fetch('../quran.json')).json()
+  reset()
+} catch (err) {
+  status(`Could not load the verses: ${err.message}`)
+}
+writeReport()
+</script>
+</body>
+</html>
