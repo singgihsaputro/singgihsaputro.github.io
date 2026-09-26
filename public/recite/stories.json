@@ -1,0 +1,755 @@
+{
+  "about": "Bedtime retellings for children, written for this app in English and Bahasa Indonesia. They are NOT Qur'anic text. Each story names the verses it retells in `refs`; please check it against them. The verse a story ends on is fetched, never typed, into story_verses.json by tools/fetch_quran.py.",
+  "stories": [
+    {
+      "title": "Adam, the First Person",
+      "emoji": "🌍",
+      "refs": "Al-Baqarah 2:30–37 · Al-A'raf 7:11–23",
+      "verse": "7:23",
+      "paragraphs": [
+        "Long, long ago, before there were any people at all, Allah told the angels: “I am going to place someone on the earth to take care of it.” That someone was Adam, the very first person.",
+        "Allah taught Adam the names of all things. When Allah asked the angels about those names, they said, “We know nothing except what You have taught us.” Then Adam told them every name, and the angels saw the gift Allah had given him.",
+        "Allah told the angels to bow down to Adam, and they all did — except Iblis. He was proud, and said, “I am better than him. You made me from fire, and him from clay.” Being proud was Iblis's big mistake.",
+        "Adam and his wife lived in a beautiful garden in Paradise. They could eat anything they liked, except from one tree. But Shaytan whispered to them and tricked them, and they ate from it.",
+        "Straight away, they were sorry. They said, “Our Lord, we have wronged ourselves. If You do not forgive us and have mercy on us, we will be among the losers.” And Allah forgave Adam, because He is the One who accepts repentance, the Most Merciful."
+      ],
+      "lesson": "Everyone makes mistakes. The best thing to do is say sorry to Allah quickly — and never be proud like Iblis.",
+      "indonesian": {
+        "title": "Nabi Adam, Manusia Pertama",
+        "paragraphs": [
+          "Dahulu kala, sebelum ada manusia sama sekali, Allah berfirman kepada para malaikat: “Aku akan menjadikan seseorang di bumi untuk menjaganya.” Dialah Nabi Adam, manusia yang pertama.",
+          "Allah mengajarkan kepada Nabi Adam nama-nama segala sesuatu. Ketika Allah bertanya kepada para malaikat tentang nama-nama itu, mereka menjawab, “Kami tidak tahu apa-apa kecuali yang telah Engkau ajarkan kepada kami.” Lalu Nabi Adam menyebutkan semua nama itu, dan para malaikat melihat karunia yang Allah berikan kepadanya.",
+          "Allah memerintahkan para malaikat untuk sujud kepada Nabi Adam, dan mereka semua sujud — kecuali Iblis. Ia sombong dan berkata, “Aku lebih baik darinya. Engkau menciptakanku dari api, dan menciptakannya dari tanah.” Sombong adalah kesalahan besar Iblis.",
+          "Nabi Adam dan istrinya tinggal di sebuah taman yang indah di surga. Mereka boleh makan apa saja yang mereka suka, kecuali dari satu pohon. Tetapi setan membisiki dan menipu mereka, sehingga mereka makan dari pohon itu.",
+          "Mereka langsung menyesal. Mereka berdoa, “Ya Tuhan kami, kami telah menzalimi diri kami sendiri. Jika Engkau tidak mengampuni kami dan tidak merahmati kami, niscaya kami termasuk orang-orang yang rugi.” Dan Allah menerima tobat Nabi Adam, karena Dia Maha Penerima tobat, Maha Penyayang."
+        ],
+        "lesson": "Setiap orang pernah berbuat salah. Yang terbaik adalah segera minta maaf kepada Allah — dan jangan pernah sombong seperti Iblis."
+      }
+    },
+    {
+      "title": "Nuh and the Great Ship",
+      "emoji": "🚢",
+      "refs": "Hud 11:25–48 · Nuh 71:5–9 · Al-Ankabut 29:14",
+      "verse": "11:41",
+      "paragraphs": [
+        "Prophet Nuh lived among people who worshipped idols. He called them to worship Allah alone — by night and by day, loudly and quietly — for a very, very long time: nine hundred and fifty years!",
+        "Only a few people believed. So Allah told Nuh to build a great ship. Whenever the chiefs of his people walked past, they laughed at him. But Nuh kept building, because Allah had told him to.",
+        "Then Allah's command came, and the water began to gush out. Nuh took on board a pair of every kind of animal, and the people who believed. And he said, “Climb aboard! In the name of Allah it sails, and in the name of Allah it stops.”",
+        "The ship sailed on waves as big as mountains. Then Allah said, “O earth, swallow your water! O sky, hold back your rain!” The water went down, and the ship came to rest on a mountain called Al-Judi.",
+        "Allah said to Nuh, “Go down, with peace from Us and blessings upon you.” And Nuh and the believers stepped safely onto dry land."
+      ],
+      "lesson": "Keep doing what is right, even when others laugh. And say “Bismillah” when you begin something.",
+      "indonesian": {
+        "title": "Nabi Nuh dan Kapal Besar",
+        "paragraphs": [
+          "Nabi Nuh tinggal di tengah kaum yang menyembah berhala. Ia mengajak mereka menyembah Allah saja — siang dan malam, dengan suara keras maupun pelan — dalam waktu yang sangat, sangat lama: sembilan ratus lima puluh tahun!",
+          "Hanya sedikit orang yang beriman. Maka Allah memerintahkan Nabi Nuh membuat sebuah kapal besar. Setiap kali para pemuka kaumnya lewat, mereka menertawakannya. Tetapi Nabi Nuh terus membangun, karena Allah yang memerintahkannya.",
+          "Lalu datanglah perintah Allah, dan air mulai memancar. Nabi Nuh membawa ke atas kapal sepasang dari setiap jenis hewan, dan orang-orang yang beriman. Ia berkata, “Naiklah kalian ke dalamnya! Dengan nama Allah kapal ini berlayar dan berlabuh.”",
+          "Kapal itu berlayar di atas ombak setinggi gunung. Kemudian Allah berfirman, “Wahai bumi, telanlah airmu! Wahai langit, berhentilah!” Air pun surut, dan kapal itu berlabuh di atas gunung bernama Al-Judi.",
+          "Allah berfirman kepada Nabi Nuh, “Turunlah dengan selamat dari Kami, dan penuh berkah atasmu.” Nabi Nuh dan orang-orang beriman pun turun dengan selamat ke daratan."
+        ],
+        "lesson": "Teruslah berbuat benar, walaupun ada yang menertawakanmu. Dan ucapkan “Bismillah” setiap kali memulai sesuatu."
+      }
+    },
+    {
+      "title": "Salih and the Camel of Allah",
+      "emoji": "🐪",
+      "refs": "Hud 11:61–66 · Ash-Shu'ara 26:141–158 · Ash-Shams 91:11–15",
+      "verse": "91:13",
+      "paragraphs": [
+        "The people of Thamud were very clever builders. They carved houses right out of the mountains. Allah sent them a prophet from among themselves, named Salih.",
+        "Salih said, “O my people, worship Allah. You have no god other than Him.” But many of them said, “Bring us a sign, if you are telling the truth.”",
+        "So Allah gave them a she-camel as a sign. Salih told them, “This is the camel of Allah. She has her turn to drink, and you have yours. Do not harm her.”",
+        "But the worst of them did not listen. They hurt the camel, and then they were full of regret — but it was too late, and Allah's punishment came to them. Allah saved Salih and the people who believed with him.",
+        "You can find this story in Surah Ash-Shams, number 91, which you can practise reciting in this app!"
+      ],
+      "lesson": "Keep your promises, be gentle with animals, and listen when someone gives you good advice.",
+      "indonesian": {
+        "title": "Nabi Shalih dan Unta Allah",
+        "paragraphs": [
+          "Kaum Tsamud adalah pembangun yang sangat pandai. Mereka memahat rumah-rumah langsung dari gunung. Allah mengutus kepada mereka seorang nabi dari kalangan mereka sendiri, bernama Shalih.",
+          "Nabi Shalih berkata, “Wahai kaumku, sembahlah Allah. Tidak ada tuhan bagimu selain Dia.” Tetapi banyak dari mereka berkata, “Datangkanlah sebuah tanda, jika kamu orang yang benar.”",
+          "Maka Allah memberi mereka seekor unta betina sebagai tanda. Nabi Shalih berkata, “Ini unta Allah. Ia punya giliran minum, dan kalian punya giliran sendiri. Jangan kalian sakiti dia.”",
+          "Tetapi orang yang paling jahat di antara mereka tidak mau mendengar. Mereka menyakiti unta itu, lalu mereka menyesal — tetapi sudah terlambat, dan azab Allah datang kepada mereka. Allah menyelamatkan Nabi Shalih dan orang-orang yang beriman bersamanya.",
+          "Kisah ini ada di Surah Asy-Syams, surah ke-91, yang bisa kamu latih bacaannya di aplikasi ini!"
+        ],
+        "lesson": "Tepati janjimu, sayangi hewan, dan dengarkan ketika ada yang memberi nasihat baik."
+      }
+    },
+    {
+      "title": "Ibrahim Looks Up at the Sky",
+      "emoji": "⭐",
+      "refs": "Al-An'am 6:74–79",
+      "verse": "6:79",
+      "paragraphs": [
+        "Prophet Ibrahim's people worshipped idols. Ibrahim wanted to help them think.",
+        "One night, he saw a bright star. “This is my Lord,” he said. But when the star set and disappeared, he said, “I do not love things that disappear.”",
+        "Then he saw the moon rising, big and shining. “This is my Lord,” he said. But when the moon set too, he said, “If my Lord does not guide me, I will surely be lost.”",
+        "In the morning he saw the sun rising. “This is my Lord — this is the biggest!” But in the evening, the sun set as well.",
+        "Then Ibrahim said, “O my people, I am free of everything you worship besides Allah. I turn my face to the One who created the heavens and the earth.”"
+      ],
+      "lesson": "The stars, the moon and the sun all go away. Allah, who made them, is always there.",
+      "indonesian": {
+        "title": "Nabi Ibrahim Memandang Langit",
+        "paragraphs": [
+          "Kaum Nabi Ibrahim menyembah berhala. Nabi Ibrahim ingin mengajak mereka berpikir.",
+          "Suatu malam, ia melihat sebuah bintang yang terang. “Inilah Tuhanku,” katanya. Tetapi ketika bintang itu terbenam dan menghilang, ia berkata, “Aku tidak suka kepada yang terbenam.”",
+          "Lalu ia melihat bulan terbit, besar dan bersinar. “Inilah Tuhanku,” katanya. Tetapi ketika bulan juga terbenam, ia berkata, “Sungguh, jika Tuhanku tidak memberiku petunjuk, pastilah aku termasuk orang yang sesat.”",
+          "Pagi harinya ia melihat matahari terbit. “Inilah Tuhanku — ini yang paling besar!” Tetapi sore harinya, matahari pun terbenam.",
+          "Lalu Nabi Ibrahim berkata, “Wahai kaumku, aku berlepas diri dari semua yang kalian sembah selain Allah. Aku menghadapkan wajahku kepada Allah yang menciptakan langit dan bumi.”"
+        ],
+        "lesson": "Bintang, bulan, dan matahari semuanya terbenam. Allah yang menciptakan semuanya selalu ada."
+      }
+    },
+    {
+      "title": "Ibrahim and the Idols",
+      "emoji": "🔥",
+      "refs": "Al-Anbiya 21:51–70",
+      "verse": "21:69",
+      "paragraphs": [
+        "Ibrahim asked his father and his people, “What are these statues that you worship?” They said, “We found our fathers worshipping them.” Ibrahim said, “Then you and your fathers have been clearly wrong.”",
+        "One day, when the people had gone away, Ibrahim broke the idols into pieces — all except the biggest one.",
+        "When the people came back, they shouted, “Who did this to our gods?” They asked Ibrahim, and he said, “Why, this biggest one did it! Ask them — if they can speak!”",
+        "The people knew that idols cannot speak. Ibrahim said, “Then why do you worship things that cannot help you or harm you?” But instead of listening, they grew angry and built a huge fire to throw him into.",
+        "Allah said, “O fire, be cool and safe for Ibrahim.” And the fire could not hurt him."
+      ],
+      "lesson": "Be brave for what is true. Allah protects those who trust Him.",
+      "indonesian": {
+        "title": "Nabi Ibrahim dan Berhala-Berhala",
+        "paragraphs": [
+          "Nabi Ibrahim bertanya kepada ayah dan kaumnya, “Patung-patung apakah ini yang kalian sembah?” Mereka menjawab, “Kami mendapati nenek moyang kami menyembahnya.” Nabi Ibrahim berkata, “Kalian dan nenek moyang kalian berada dalam kesesatan yang nyata.”",
+          "Suatu hari, ketika orang-orang sedang pergi, Nabi Ibrahim menghancurkan berhala-berhala itu — semuanya kecuali yang paling besar.",
+          "Ketika orang-orang kembali, mereka berteriak, “Siapa yang melakukan ini terhadap tuhan-tuhan kami?” Mereka bertanya kepada Nabi Ibrahim, dan ia menjawab, “Yang paling besar inilah yang melakukannya! Tanyakan saja kepada mereka — kalau mereka bisa bicara!”",
+          "Orang-orang tahu bahwa berhala tidak bisa bicara. Nabi Ibrahim berkata, “Lalu mengapa kalian menyembah sesuatu yang tidak bisa memberi manfaat ataupun mencelakakan kalian?” Tetapi mereka tidak mau mendengar. Mereka marah dan menyalakan api yang sangat besar untuk melemparnya.",
+          "Allah berfirman, “Wahai api, jadilah dingin dan keselamatan bagi Ibrahim.” Dan api itu tidak bisa melukainya."
+        ],
+        "lesson": "Beranilah membela kebenaran. Allah melindungi orang-orang yang bertawakal kepada-Nya."
+      }
+    },
+    {
+      "title": "Building the Ka'bah",
+      "emoji": "🕋",
+      "refs": "Ibrahim 14:37 · Al-Baqarah 2:125–129",
+      "verse": "2:127",
+      "paragraphs": [
+        "Prophet Ibrahim settled part of his family in a dry valley where no crops grew, near Allah's sacred House. He prayed, “Our Lord, make people's hearts love them, and give them fruits to eat, so they may be thankful.”",
+        "Later, Ibrahim and his son Ismail worked together to raise the foundations of the Ka'bah.",
+        "As they worked, they prayed: “Our Lord, accept this from us. You are the All-Hearing, the All-Knowing.”",
+        "They also asked Allah to send a messenger to the people of that land, to teach them the Book and wisdom. Scholars explain that Allah answered this prayer with Prophet Muhammad, peace be upon him.",
+        "Today, millions of people pray facing the Ka'bah that Ibrahim and Ismail built."
+      ],
+      "lesson": "Work together on good things, and ask Allah to accept what you do.",
+      "indonesian": {
+        "title": "Membangun Ka'bah",
+        "paragraphs": [
+          "Nabi Ibrahim menempatkan sebagian keluarganya di sebuah lembah yang kering tanpa tanaman, di dekat Rumah Allah yang suci. Ia berdoa, “Ya Tuhan kami, jadikanlah hati manusia cenderung kepada mereka, dan berilah mereka rezeki buah-buahan, agar mereka bersyukur.”",
+          "Kemudian, Nabi Ibrahim dan putranya, Nabi Ismail, bekerja sama meninggikan fondasi Ka'bah.",
+          "Sambil bekerja, mereka berdoa: “Ya Tuhan kami, terimalah amal kami. Sungguh, Engkaulah Yang Maha Mendengar, Maha Mengetahui.”",
+          "Mereka juga memohon kepada Allah agar mengutus seorang rasul kepada penduduk negeri itu, untuk mengajarkan Kitab dan hikmah. Para ulama menjelaskan bahwa Allah mengabulkan doa ini dengan mengutus Nabi Muhammad shallallahu 'alaihi wa sallam.",
+          "Hari ini, jutaan orang shalat menghadap Ka'bah yang dibangun oleh Nabi Ibrahim dan Nabi Ismail."
+        ],
+        "lesson": "Bekerja samalah dalam kebaikan, dan mintalah kepada Allah agar menerima amalmu."
+      }
+    },
+    {
+      "title": "Yusuf's Dream",
+      "emoji": "🌙",
+      "refs": "Yusuf 12:4–21",
+      "verse": "12:4",
+      "paragraphs": [
+        "Young Yusuf said to his father, Prophet Yaqub, “O my father! I saw in a dream eleven stars, and the sun and the moon — and they were all bowing to me!”",
+        "His father knew this was a special dream. He said, “My son, do not tell your brothers about it, or they may plot against you. Your Lord will choose you, and teach you the meaning of dreams.”",
+        "Yusuf's brothers were jealous, because their father loved Yusuf and his brother so much. They took Yusuf out, saying he could play, and they threw him down into a deep well. But Allah comforted Yusuf there: one day, he would tell his brothers about what they had done.",
+        "That night the brothers came home crying. They showed their father Yusuf's shirt with false blood on it, and said a wolf had eaten him. Yaqub did not believe them. He said, “Patience is most beautiful. And Allah is the One whose help I ask.”",
+        "Then some travellers came to the well and let down a bucket — and up came Yusuf! He was taken to Egypt, where Allah had great plans for him. The next story tells what happened."
+      ],
+      "lesson": "When something sad happens, have beautiful patience — “sabrun jamil” — and ask Allah for help.",
+      "indonesian": {
+        "title": "Mimpi Nabi Yusuf",
+        "paragraphs": [
+          "Yusuf kecil berkata kepada ayahnya, Nabi Ya'qub, “Wahai ayahku! Aku bermimpi melihat sebelas bintang, matahari, dan bulan — semuanya sujud kepadaku!”",
+          "Ayahnya tahu ini mimpi yang istimewa. Ia berkata, “Wahai anakku, jangan ceritakan mimpimu kepada saudara-saudaramu, nanti mereka membuat tipu daya untukmu. Tuhanmu akan memilihmu, dan mengajarkan kepadamu takwil mimpi.”",
+          "Saudara-saudara Yusuf merasa iri, karena ayah mereka sangat menyayangi Yusuf dan saudaranya. Mereka mengajak Yusuf pergi, katanya untuk bermain, lalu melemparkannya ke dasar sumur yang dalam. Tetapi Allah menghibur Yusuf di sana: suatu hari, ia akan memberi tahu saudara-saudaranya tentang perbuatan mereka ini.",
+          "Malam itu saudara-saudaranya pulang sambil menangis. Mereka memperlihatkan baju Yusuf yang berlumuran darah palsu, dan berkata bahwa serigala telah memakannya. Nabi Ya'qub tidak percaya. Ia berkata, “Maka kesabaran yang indah itulah yang terbaik. Dan hanya kepada Allah aku memohon pertolongan.”",
+          "Lalu datanglah sekelompok musafir ke sumur itu dan menurunkan timba — dan naiklah Yusuf! Ia dibawa ke Mesir, tempat Allah menyiapkan rencana besar untuknya. Cerita berikutnya akan menceritakan apa yang terjadi."
+        ],
+        "lesson": "Ketika sesuatu yang sedih terjadi, bersabarlah dengan sabar yang indah — “shabrun jamil” — dan mintalah pertolongan kepada Allah."
+      }
+    },
+    {
+      "title": "Yusuf Forgives His Brothers",
+      "emoji": "🤝",
+      "refs": "Yusuf 12:54–100",
+      "verse": "12:92",
+      "paragraphs": [
+        "In Egypt, Yusuf grew up honest and wise. After many years and many tests, he was put in charge of the storehouses of the whole land, because he was trustworthy and knowledgeable.",
+        "Then came years of famine, when food would not grow. Yusuf's brothers travelled to Egypt to buy food. Yusuf knew them straight away — but they did not recognise him.",
+        "In the end, Yusuf told them, “I am Yusuf!” His brothers were ashamed. They said, “Allah has truly chosen you over us, and we were wrong.”",
+        "Yusuf could have been angry. Instead he said, “No blame on you today. May Allah forgive you — He is the Most Merciful of all.”",
+        "Yusuf sent his shirt home, and when it was laid over his father's face, Yaqub could see again. The whole family came to Egypt, and they all bowed before Yusuf. He said, “Father, this is the meaning of my dream from long ago.”"
+      ],
+      "lesson": "Forgiving someone who hurt you is one of the most beautiful things you can do.",
+      "indonesian": {
+        "title": "Nabi Yusuf Memaafkan Saudara-Saudaranya",
+        "paragraphs": [
+          "Di Mesir, Yusuf tumbuh menjadi orang yang jujur dan bijaksana. Setelah bertahun-tahun dan banyak ujian, ia dipercaya menjaga gudang-gudang makanan di seluruh negeri, karena ia amanah dan berilmu.",
+          "Lalu datang tahun-tahun paceklik, ketika tanaman tidak bisa tumbuh. Saudara-saudara Yusuf datang ke Mesir untuk membeli makanan. Yusuf langsung mengenali mereka — tetapi mereka tidak mengenalinya.",
+          "Akhirnya Yusuf berkata kepada mereka, “Akulah Yusuf!” Saudara-saudaranya merasa malu. Mereka berkata, “Sungguh, Allah telah melebihkan kamu di atas kami, dan kami adalah orang yang bersalah.”",
+          "Yusuf bisa saja marah. Tetapi ia berkata, “Pada hari ini tidak ada cercaan terhadap kalian. Semoga Allah mengampuni kalian — Dia Maha Penyayang di antara para penyayang.”",
+          "Yusuf mengirimkan bajunya pulang, dan ketika baju itu diletakkan di wajah ayahnya, Nabi Ya'qub bisa melihat kembali. Seluruh keluarga datang ke Mesir, dan mereka semua sujud kepada Yusuf. Yusuf berkata, “Wahai ayahku, inilah takwil mimpiku dahulu.”"
+        ],
+        "lesson": "Memaafkan orang yang pernah menyakitimu adalah salah satu hal terindah yang bisa kamu lakukan."
+      }
+    },
+    {
+      "title": "Ayyub, the Patient One",
+      "emoji": "💧",
+      "refs": "Al-Anbiya 21:83–84 · Sad 38:41–44",
+      "verse": "21:83",
+      "paragraphs": [
+        "Prophet Ayyub was a good servant of Allah. Allah tested him with great hardship and illness.",
+        "Ayyub stayed patient. He called to his Lord politely: “Harm has touched me, and You are the Most Merciful of all who show mercy.”",
+        "Allah answered him: “Stamp your foot on the ground!” A cool spring came up — water to wash in and water to drink. And Allah took away his hardship.",
+        "Allah gave him back his family, and as many again with them, as a mercy and a reminder for everyone who worships Allah.",
+        "Allah praised him: “We found him patient. What an excellent servant! He always turned back to Allah.”"
+      ],
+      "lesson": "When things are hard, be patient, and ask Allah with good manners. He always hears.",
+      "indonesian": {
+        "title": "Nabi Ayyub yang Sabar",
+        "paragraphs": [
+          "Nabi Ayyub adalah hamba Allah yang saleh. Allah mengujinya dengan kesulitan dan penyakit yang berat.",
+          "Nabi Ayyub tetap sabar. Ia berdoa kepada Tuhannya dengan santun: “Aku telah ditimpa penyakit, padahal Engkau Tuhan Yang Maha Penyayang di antara semua penyayang.”",
+          "Allah menjawab doanya: “Hentakkanlah kakimu ke tanah!” Lalu keluarlah mata air yang sejuk — air untuk mandi dan air untuk minum. Dan Allah menghilangkan kesusahannya.",
+          "Allah mengembalikan keluarganya kepadanya, ditambah sebanyak itu pula bersama mereka, sebagai rahmat dan pelajaran bagi semua orang yang menyembah Allah.",
+          "Allah memujinya: “Sungguh, Kami dapati dia seorang yang sabar. Dialah sebaik-baik hamba. Sungguh, dia sangat taat kepada Allah.”"
+        ],
+        "lesson": "Ketika keadaan sulit, bersabarlah, dan mintalah kepada Allah dengan sopan. Dia selalu mendengar."
+      }
+    },
+    {
+      "title": "Baby Musa and the River",
+      "emoji": "🧺",
+      "refs": "Al-Qasas 28:4–13 · Ta-Ha 20:38–40",
+      "verse": "28:7",
+      "paragraphs": [
+        "Long ago in Egypt there was a cruel king called Pharaoh. He was hurting the Children of Israel, even their baby boys.",
+        "When baby Musa was born, Allah inspired his mother: “Feed him, and when you fear for him, put him in the river. Do not be afraid, and do not be sad. We will bring him back to you, and make him one of the messengers.”",
+        "So she placed him in a chest and set it on the river. The water carried him — right to Pharaoh's own family! Pharaoh's wife said, “He will be a joy for me and for you. Do not kill him; maybe he will help us, or we can adopt him as a son.”",
+        "Musa's mother was so worried. She told his sister, “Follow him.” Baby Musa would not drink milk from anyone who tried to feed him. So his sister said, “Shall I show you a family who will look after him well?”",
+        "And so Allah brought Musa back to his mother — so that she would be happy and not sad, and would know that Allah's promise is always true."
+      ],
+      "lesson": "Allah's promise is always true. When you are worried, trust Him.",
+      "indonesian": {
+        "title": "Bayi Musa dan Sungai",
+        "paragraphs": [
+          "Dahulu kala di Mesir ada seorang raja yang kejam bernama Fir'aun. Ia menyakiti Bani Israil, bahkan bayi-bayi laki-laki mereka.",
+          "Ketika bayi Musa lahir, Allah mengilhamkan kepada ibunya: “Susuilah dia, dan apabila engkau khawatir terhadapnya, hanyutkanlah dia ke sungai. Jangan takut dan jangan bersedih. Kami akan mengembalikannya kepadamu, dan menjadikannya salah seorang rasul.”",
+          "Maka ibunya meletakkannya di dalam sebuah peti dan menghanyutkannya ke sungai. Air membawanya — tepat ke keluarga Fir'aun sendiri! Istri Fir'aun berkata, “Dia penyejuk mata hati bagiku dan bagimu. Jangan kalian bunuh dia; mudah-mudahan dia bermanfaat bagi kita, atau kita ambil dia menjadi anak.”",
+          "Ibu Musa sangat cemas. Ia berkata kepada saudara perempuan Musa, “Ikutilah dia.” Bayi Musa tidak mau menyusu kepada siapa pun yang mencoba menyusuinya. Maka saudara perempuannya berkata, “Maukah aku tunjukkan sebuah keluarga yang akan merawatnya dengan baik?”",
+          "Begitulah Allah mengembalikan Musa kepada ibunya — agar ibunya senang dan tidak bersedih, dan agar ia tahu bahwa janji Allah itu selalu benar."
+        ],
+        "lesson": "Janji Allah selalu benar. Ketika kamu khawatir, bertawakallah kepada-Nya."
+      }
+    },
+    {
+      "title": "Musa Helps at the Well",
+      "emoji": "🐑",
+      "refs": "Al-Qasas 28:21–28",
+      "verse": "28:24",
+      "paragraphs": [
+        "When Musa was a grown man, he had to leave Egypt, all alone. He travelled far away, towards a land called Madyan.",
+        "At a well, he saw many shepherds watering their animals. Two young women were waiting at the side, holding their sheep back. Musa asked, “What is the matter?” They said, “We cannot water our sheep until the shepherds leave, and our father is a very old man.”",
+        "So Musa watered their sheep for them. Then he sat down in the shade and prayed: “My Lord, I truly need whatever good You send down to me.”",
+        "Soon one of the young women came back, walking shyly. “My father invites you, to reward you for watering our sheep.”",
+        "Her father welcomed Musa. His daughter said, “Father, hire him! The best person to hire is someone strong and trustworthy.” And Musa stayed and worked with the family for many years."
+      ],
+      "lesson": "Help people who need it, even if nobody asks you. And tell Allah what you need.",
+      "indonesian": {
+        "title": "Nabi Musa Menolong di Sumur",
+        "paragraphs": [
+          "Ketika Musa sudah dewasa, ia harus meninggalkan Mesir seorang diri. Ia berjalan jauh, menuju negeri bernama Madyan.",
+          "Di sebuah sumur, ia melihat banyak penggembala sedang memberi minum ternak mereka. Dua orang perempuan menunggu di pinggir, menahan ternak mereka. Musa bertanya, “Ada apa dengan kalian?” Mereka menjawab, “Kami tidak dapat memberi minum ternak kami sampai para penggembala itu pergi, sedangkan ayah kami sudah sangat tua.”",
+          "Maka Musa memberi minum ternak mereka. Lalu ia duduk berteduh dan berdoa: “Ya Tuhanku, sungguh aku sangat memerlukan kebaikan apa pun yang Engkau turunkan kepadaku.”",
+          "Tak lama kemudian salah seorang dari perempuan itu datang kembali, berjalan dengan malu-malu. “Ayahku mengundangmu, untuk membalas kebaikanmu memberi minum ternak kami.”",
+          "Ayahnya menyambut Musa dengan baik. Putrinya berkata, “Wahai ayahku, jadikanlah dia pekerja! Orang terbaik untuk dipekerjakan adalah yang kuat dan dapat dipercaya.” Musa pun tinggal dan bekerja bersama keluarga itu selama bertahun-tahun."
+        ],
+        "lesson": "Tolonglah orang yang membutuhkan, walaupun tidak ada yang memintamu. Dan sampaikan kepada Allah apa yang kamu butuhkan."
+      }
+    },
+    {
+      "title": "Musa and the Fire on the Mountain",
+      "emoji": "✨",
+      "refs": "Ta-Ha 20:9–36",
+      "verse": "20:25",
+      "paragraphs": [
+        "Musa was travelling with his family when he saw a fire in the distance. “Wait here,” he said. “Maybe I can bring you a flame, or find someone at the fire to guide us.”",
+        "When he came near, a voice called: “O Musa! I am your Lord. Take off your sandals — you are in the sacred valley of Tuwa.”",
+        "Allah asked, “What is that in your right hand, Musa?” Musa said, “It is my staff. I lean on it, and I knock down leaves with it for my sheep.” Allah said, “Throw it down!” — and it became a moving snake! “Take it, and do not fear,” said Allah. “We will turn it back as it was.”",
+        "Then Allah told Musa to go to Pharaoh. That was a very big job. Musa prayed: “My Lord, open my heart, make my task easy for me, and untie the knot from my tongue so they understand me. And give me a helper — my brother Harun.”",
+        "Allah said, “You have been given what you asked for, O Musa.”"
+      ],
+      "lesson": "When something feels too hard, ask Allah: “Rabbi-shrah li sadri” — my Lord, open my heart.",
+      "indonesian": {
+        "title": "Nabi Musa dan Api di Gunung",
+        "paragraphs": [
+          "Musa sedang dalam perjalanan bersama keluarganya ketika ia melihat api di kejauhan. “Tunggulah di sini,” katanya. “Mungkin aku bisa membawakan sedikit nyala api untuk kalian, atau menemukan petunjuk di dekat api itu.”",
+          "Ketika ia mendekat, terdengar seruan: “Wahai Musa! Sungguh, Aku adalah Tuhanmu. Lepaskanlah kedua terompahmu — engkau berada di lembah suci Tuwa.”",
+          "Allah bertanya, “Apakah yang ada di tangan kananmu, wahai Musa?” Musa menjawab, “Ini tongkatku. Aku bertumpu padanya, dan aku merontokkan daun-daun dengannya untuk kambingku.” Allah berfirman, “Lemparkanlah!” — dan tongkat itu menjadi seekor ular yang merayap cepat! “Peganglah, dan jangan takut,” firman Allah. “Kami akan mengembalikannya seperti semula.”",
+          "Lalu Allah memerintahkan Musa pergi kepada Fir'aun. Itu tugas yang sangat besar. Musa berdoa: “Ya Tuhanku, lapangkanlah dadaku, mudahkanlah urusanku, dan lepaskanlah kekakuan dari lidahku agar mereka mengerti perkataanku. Dan jadikanlah untukku seorang pembantu — saudaraku, Harun.”",
+          "Allah berfirman, “Sungguh, telah diperkenankan permintaanmu, wahai Musa.”"
+        ],
+        "lesson": "Ketika sesuatu terasa terlalu berat, berdoalah kepada Allah: “Rabbisyrah li shadri” — ya Tuhanku, lapangkanlah dadaku."
+      }
+    },
+    {
+      "title": "The Staff and the Magicians",
+      "emoji": "🪄",
+      "refs": "Ta-Ha 20:56–73 · Al-A'raf 7:113–126",
+      "verse": "20:69",
+      "paragraphs": [
+        "Pharaoh did not believe Musa. He gathered every skilled magician in the land for a great contest, on a festival day, in front of all the people.",
+        "The magicians said, “Musa, will you throw first, or shall we?” Musa said, “You throw.” They threw down their ropes and sticks — and by their magic, the ropes seemed to be moving! Musa felt a little afraid.",
+        "Allah said, “Do not fear — you will win. Throw what is in your right hand. It will swallow up what they have made. What they made is only a magician's trick.”",
+        "Musa threw his staff, and it swallowed up all their tricks! The magicians knew at once this was not magic. They fell down in prostration and said, “We believe in the Lord of Harun and Musa!”",
+        "Pharaoh was furious and threatened them. But the magicians stayed firm: “We will never choose you over the clear signs that have come to us.”"
+      ],
+      "lesson": "Tricks and lies cannot beat the truth. Be brave when you know what is right.",
+      "indonesian": {
+        "title": "Tongkat dan Para Penyihir",
+        "paragraphs": [
+          "Fir'aun tidak mau percaya kepada Musa. Ia mengumpulkan semua penyihir yang pandai di negerinya untuk sebuah pertandingan besar, pada hari raya, di hadapan semua orang.",
+          "Para penyihir berkata, “Wahai Musa, engkau yang melempar lebih dahulu, atau kami?” Musa berkata, “Silakan kalian melempar.” Mereka melemparkan tali-tali dan tongkat-tongkat mereka — dan karena sihir mereka, tali-tali itu seakan-akan bergerak! Musa merasa sedikit takut.",
+          "Allah berfirman, “Jangan takut — engkaulah yang akan menang. Lemparkan apa yang ada di tangan kananmu. Ia akan menelan apa yang mereka buat. Apa yang mereka buat itu hanyalah tipu daya penyihir.”",
+          "Musa melemparkan tongkatnya, dan tongkat itu menelan semua tipuan mereka! Para penyihir langsung tahu ini bukan sihir. Mereka tersungkur sujud dan berkata, “Kami beriman kepada Tuhannya Harun dan Musa!”",
+          "Fir'aun sangat marah dan mengancam mereka. Tetapi para penyihir itu tetap teguh: “Kami tidak akan memilihmu di atas bukti-bukti nyata yang telah datang kepada kami.”"
+        ],
+        "lesson": "Tipuan dan kebohongan tidak bisa mengalahkan kebenaran. Beranilah ketika kamu tahu apa yang benar."
+      }
+    },
+    {
+      "title": "The Sea Opens a Path",
+      "emoji": "🌊",
+      "refs": "Ash-Shu'ara 26:52–67 · Ta-Ha 20:77–78",
+      "verse": "26:62",
+      "paragraphs": [
+        "Allah told Musa, “Travel by night with My servants — you will be followed.” So Musa led the Children of Israel out of Egypt in the dark.",
+        "At sunrise, Pharaoh and his army came chasing after them. When the two groups saw each other, Musa's people cried, “We are going to be caught!” In front of them was the sea. Behind them was Pharaoh's army.",
+        "But Musa said, “No! My Lord is with me. He will guide me.”",
+        "Allah told him, “Strike the sea with your staff.” And the sea split apart! Each side stood up like a huge mountain, with a dry path in between.",
+        "Musa and everyone with him crossed safely. When Pharaoh's army followed them into the sea, the water closed over them. Allah had saved Musa and all who were with him."
+      ],
+      "lesson": "When you are scared and don't know what to do, remember: Allah is with you, and He will show you the way.",
+      "indonesian": {
+        "title": "Laut Terbelah Menjadi Jalan",
+        "paragraphs": [
+          "Allah berfirman kepada Musa, “Pergilah pada malam hari bersama hamba-hamba-Ku — kalian akan dikejar.” Maka Musa membawa Bani Israil keluar dari Mesir dalam gelap.",
+          "Saat matahari terbit, Fir'aun dan bala tentaranya datang mengejar. Ketika kedua rombongan saling melihat, kaum Musa berteriak, “Kita pasti akan tersusul!” Di depan mereka ada laut. Di belakang mereka ada tentara Fir'aun.",
+          "Tetapi Musa berkata, “Sekali-kali tidak! Sungguh, Tuhanku bersamaku. Dia akan memberiku petunjuk.”",
+          "Allah berfirman kepadanya, “Pukullah laut itu dengan tongkatmu.” Dan laut pun terbelah! Setiap belahan berdiri seperti gunung yang besar, dengan jalan yang kering di tengahnya.",
+          "Musa dan semua orang yang bersamanya menyeberang dengan selamat. Ketika tentara Fir'aun mengikuti mereka masuk ke laut, air menutup kembali di atas mereka. Allah telah menyelamatkan Musa dan semua orang yang bersamanya."
+        ],
+        "lesson": "Ketika kamu takut dan tidak tahu harus berbuat apa, ingatlah: Allah bersamamu, dan Dia akan menunjukkan jalan."
+      }
+    },
+    {
+      "title": "Musa and the Wise Teacher",
+      "emoji": "📚",
+      "refs": "Al-Kahf 18:60–82",
+      "verse": "18:69",
+      "paragraphs": [
+        "Prophet Musa wanted to learn more. He set out with a young helper to find a special servant of Allah — someone Allah had given mercy and knowledge — at the place where two seas meet.",
+        "Musa asked him, “May I follow you, so you can teach me some of what you have been taught?” The teacher said, “You will not be able to be patient with me.” Musa said, “You will find me patient, if Allah wills.”",
+        "On their journey, the teacher did three things that seemed very strange. Here are two of them. First, he made a hole in a boat they were riding in! Musa said, “Why did you do that?” Later, in a town where nobody would give them food, the teacher fixed a wall that was about to fall down — and did not ask for any pay.",
+        "Then the teacher explained. “The boat belonged to poor people who worked at sea. A king was taking every good boat by force, so a boat with a hole would be left alone. The wall belonged to two orphan boys. Under it was a treasure for them, and their father had been a good man. Allah wanted the boys to grow up and then find their treasure.”",
+        "“I did not do these things on my own,” said the teacher. “It was a mercy from your Lord.”"
+      ],
+      "lesson": "Allah knows things we don't. Sometimes something that looks bad is hiding something good.",
+      "indonesian": {
+        "title": "Nabi Musa dan Guru yang Bijak",
+        "paragraphs": [
+          "Nabi Musa ingin belajar lebih banyak. Ia berangkat bersama seorang pemuda pembantunya untuk mencari seorang hamba Allah yang istimewa — yang telah Allah beri rahmat dan ilmu — di tempat bertemunya dua lautan.",
+          "Musa bertanya kepadanya, “Bolehkah aku mengikutimu, agar engkau mengajarkan kepadaku sebagian ilmu yang telah diajarkan kepadamu?” Guru itu berkata, “Engkau tidak akan sanggup sabar bersamaku.” Musa berkata, “Insya Allah engkau akan mendapatiku sebagai orang yang sabar.”",
+          "Dalam perjalanan, guru itu melakukan tiga hal yang tampak sangat aneh. Ini dua di antaranya. Pertama, ia melubangi perahu yang sedang mereka tumpangi! Musa bertanya, “Mengapa engkau melubanginya?” Kemudian, di sebuah kota yang penduduknya tidak mau memberi mereka makanan, guru itu memperbaiki dinding yang hampir roboh — tanpa meminta upah sedikit pun.",
+          "Lalu guru itu menjelaskan. “Perahu itu milik orang-orang miskin yang bekerja di laut. Ada seorang raja yang merampas setiap perahu yang bagus, jadi perahu yang berlubang akan dibiarkan. Dinding itu milik dua anak yatim. Di bawahnya ada harta simpanan untuk mereka, dan ayah mereka adalah orang yang saleh. Allah menghendaki agar keduanya dewasa lalu mengeluarkan harta mereka.”",
+          "“Aku tidak melakukannya atas kemauanku sendiri,” kata guru itu. “Itu adalah rahmat dari Tuhanmu.”"
+        ],
+        "lesson": "Allah mengetahui apa yang tidak kita ketahui. Kadang sesuatu yang tampak buruk menyimpan kebaikan."
+      }
+    },
+    {
+      "title": "Dawud and the Mighty Army",
+      "emoji": "🛡️",
+      "refs": "Al-Baqarah 2:246–251",
+      "verse": "2:250",
+      "paragraphs": [
+        "The Children of Israel had a king named Talut. He led his army out to face a powerful enemy, Jalut, and his soldiers.",
+        "On the way, Talut said, “Allah will test you with a river. Whoever drinks from it is not with me — except a scoop from the hand.” Most of the soldiers drank. Only a few passed the test.",
+        "When the small army saw Jalut's huge one, some said, “We cannot beat them today!” But the ones with strong faith said, “How many times has a small group beaten a big group, by Allah's permission! Allah is with the patient.”",
+        "They prayed: “Our Lord, pour patience on us, keep our feet firm, and help us win.”",
+        "By Allah's permission, they won — and a soldier named Dawud defeated Jalut. Allah gave Dawud a kingdom and wisdom, and taught him what He willed."
+      ],
+      "lesson": "Being small doesn't matter when Allah is with you. Be patient and brave.",
+      "indonesian": {
+        "title": "Nabi Dawud dan Pasukan yang Perkasa",
+        "paragraphs": [
+          "Bani Israil punya seorang raja bernama Thalut. Ia memimpin pasukannya untuk menghadapi musuh yang kuat, Jalut, dan bala tentaranya.",
+          "Di perjalanan, Thalut berkata, “Allah akan menguji kalian dengan sebuah sungai. Siapa yang meminum airnya, ia bukan pengikutku — kecuali yang menciduk seciduk dengan tangannya.” Sebagian besar prajurit meminumnya. Hanya sedikit yang lulus ujian.",
+          "Ketika pasukan yang kecil itu melihat pasukan Jalut yang sangat besar, sebagian berkata, “Kita tidak sanggup melawan mereka hari ini!” Tetapi mereka yang imannya kuat berkata, “Betapa banyak kelompok kecil mengalahkan kelompok besar dengan izin Allah! Allah bersama orang-orang yang sabar.”",
+          "Mereka berdoa: “Ya Tuhan kami, limpahkanlah kesabaran kepada kami, kukuhkanlah langkah kami, dan tolonglah kami menghadapi mereka.”",
+          "Dengan izin Allah, mereka menang — dan seorang prajurit bernama Dawud mengalahkan Jalut. Allah memberi Dawud kerajaan dan hikmah, serta mengajarkan kepadanya apa yang Dia kehendaki."
+        ],
+        "lesson": "Menjadi kecil tidak masalah jika Allah bersamamu. Bersabarlah dan jadilah pemberani."
+      }
+    },
+    {
+      "title": "Sulayman and the Little Ant",
+      "emoji": "🐜",
+      "refs": "An-Naml 27:15–19",
+      "verse": "27:18",
+      "paragraphs": [
+        "Allah gave Prophet Sulayman a mighty kingdom and special knowledge. He could even understand the speech of birds!",
+        "Sulayman had a great army of people, jinn and birds, all marching in neat rows.",
+        "One day they came to a valley full of ants. A little ant called out: “O ants! Go into your homes, so that Sulayman and his soldiers don't crush you without noticing!”",
+        "Sulayman heard her, and he smiled and laughed at what she said. Then he prayed: “My Lord, help me to be thankful for the blessings You have given me and my parents, and to do good things that please You.”",
+        "Even though he was a great king, Sulayman listened to a tiny ant — and thanked Allah."
+      ],
+      "lesson": "Every creature matters, even a tiny ant. Be gentle, and always thank Allah for your blessings.",
+      "indonesian": {
+        "title": "Nabi Sulaiman dan Semut Kecil",
+        "paragraphs": [
+          "Allah memberi Nabi Sulaiman kerajaan yang besar dan ilmu yang istimewa. Ia bahkan bisa memahami bahasa burung!",
+          "Nabi Sulaiman punya bala tentara yang besar dari manusia, jin, dan burung, semuanya berbaris dengan rapi.",
+          "Suatu hari mereka sampai di sebuah lembah yang penuh semut. Seekor semut kecil berseru: “Wahai semut-semut! Masuklah ke sarang kalian, agar kalian tidak terinjak oleh Sulaiman dan bala tentaranya tanpa mereka sadari!”",
+          "Nabi Sulaiman mendengarnya, lalu ia tersenyum dan tertawa mendengar perkataan semut itu. Kemudian ia berdoa: “Ya Tuhanku, anugerahkanlah aku ilham untuk mensyukuri nikmat-Mu yang telah Engkau berikan kepadaku dan kepada kedua orang tuaku, dan untuk mengerjakan kebaikan yang Engkau ridai.”",
+          "Walaupun ia raja yang besar, Nabi Sulaiman mendengarkan seekor semut kecil — dan bersyukur kepada Allah."
+        ],
+        "lesson": "Setiap makhluk itu berharga, bahkan seekor semut kecil. Bersikaplah lembut, dan selalu bersyukur kepada Allah atas nikmat-Nya."
+      }
+    },
+    {
+      "title": "The Hoopoe's Big News",
+      "emoji": "🐦",
+      "refs": "An-Naml 27:20–44",
+      "verse": "27:30",
+      "paragraphs": [
+        "One day, Prophet Sulayman checked on all the birds and asked, “Why don't I see the hoopoe?” Soon the little hoopoe arrived with news: “I have learned something you don't know! I've come from the land of Saba with true news.”",
+        "“I found a queen ruling over them. She has been given everything, and she has a magnificent throne. But she and her people bow down to the sun instead of Allah.”",
+        "Sulayman said, “We will see if you are telling the truth.” He sent the hoopoe with a letter. The queen read it to her chiefs: “It is from Sulayman, and it says: In the name of Allah, the Most Merciful, the Especially Merciful.”",
+        "The queen sent Sulayman a rich gift, but he said, “What Allah has given me is better.” Then her own throne was brought to Sulayman in the blink of an eye! Sulayman said, “This is from the favour of my Lord, to test me: will I be thankful?”",
+        "When the queen came and saw these signs, she said, “My Lord, I have wronged myself. I submit, with Sulayman, to Allah, the Lord of all the worlds.”"
+      ],
+      "lesson": "Check that news is true before you believe it — and remember that even a small bird can do a big job.",
+      "indonesian": {
+        "title": "Kabar Besar dari Burung Hud-hud",
+        "paragraphs": [
+          "Suatu hari, Nabi Sulaiman memeriksa burung-burung dan bertanya, “Mengapa aku tidak melihat burung Hud-hud?” Tak lama kemudian Hud-hud kecil datang membawa kabar: “Aku mengetahui sesuatu yang belum engkau ketahui! Aku datang dari negeri Saba' membawa berita yang benar.”",
+          "“Aku mendapati seorang ratu yang memerintah mereka. Ia dianugerahi segala sesuatu, dan ia punya singgasana yang besar. Tetapi ia dan kaumnya menyembah matahari, bukan Allah.”",
+          "Nabi Sulaiman berkata, “Akan kami lihat apakah engkau benar.” Ia mengutus Hud-hud membawa sepucuk surat. Sang ratu membacakannya kepada para pembesarnya: “Surat ini dari Sulaiman, dan isinya: Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.”",
+          "Sang ratu mengirim hadiah yang mewah kepada Nabi Sulaiman, tetapi ia berkata, “Apa yang Allah berikan kepadaku lebih baik.” Lalu singgasana sang ratu dibawa ke hadapan Nabi Sulaiman dalam sekejap mata! Nabi Sulaiman berkata, “Ini termasuk karunia Tuhanku, untuk mengujiku: apakah aku bersyukur?”",
+          "Ketika sang ratu datang dan melihat tanda-tanda itu, ia berkata, “Ya Tuhanku, sungguh aku telah menzalimi diriku. Aku berserah diri bersama Sulaiman kepada Allah, Tuhan seluruh alam.”"
+        ],
+        "lesson": "Periksalah dulu apakah sebuah berita itu benar sebelum mempercayainya — dan ingat, burung kecil pun bisa melakukan tugas besar."
+      }
+    },
+    {
+      "title": "Yunus and the Big Fish",
+      "emoji": "🐋",
+      "refs": "Al-Anbiya 21:87–88 · As-Saffat 37:139–148",
+      "verse": "21:87",
+      "paragraphs": [
+        "Prophet Yunus was sent to his people, but they would not listen. So he went away from them, upset, and got on a ship that was full of people.",
+        "Lots were drawn on the ship, and Yunus lost. He went into the sea, and a big fish swallowed him!",
+        "Inside the fish, it was dark — very, very dark. There, Yunus called out to Allah: “There is no god but You. Glory be to You! I have done wrong.”",
+        "Allah heard him and saved him. The fish put him out onto the shore, weak and ill, and Allah made a gourd plant grow over him.",
+        "Then Allah sent Yunus to his people — a hundred thousand of them, or even more — and this time, they believed!"
+      ],
+      "lesson": "Allah can hear you anywhere, even in the darkest place. When you make a mistake, turn to Him.",
+      "indonesian": {
+        "title": "Nabi Yunus dan Ikan Besar",
+        "paragraphs": [
+          "Nabi Yunus diutus kepada kaumnya, tetapi mereka tidak mau mendengar. Maka ia pergi meninggalkan mereka dengan kesal, lalu naik ke sebuah kapal yang penuh muatan.",
+          "Di atas kapal diadakan undian, dan Nabi Yunus kalah. Ia masuk ke laut, lalu seekor ikan besar menelannya!",
+          "Di dalam perut ikan itu gelap — sangat, sangat gelap. Di sana Nabi Yunus berdoa kepada Allah: “Tidak ada tuhan selain Engkau. Mahasuci Engkau! Sungguh, aku termasuk orang-orang yang zalim.”",
+          "Allah mendengar doanya dan menyelamatkannya. Ikan itu melemparkannya ke daratan dalam keadaan lemah dan sakit, lalu Allah menumbuhkan sebatang pohon labu di atasnya.",
+          "Kemudian Allah mengutus Nabi Yunus kepada kaumnya — seratus ribu orang, atau lebih — dan kali ini, mereka beriman!"
+        ],
+        "lesson": "Allah bisa mendengarmu di mana saja, bahkan di tempat yang paling gelap. Ketika kamu berbuat salah, kembalilah kepada-Nya."
+      }
+    },
+    {
+      "title": "Zakariya's Quiet Prayer",
+      "emoji": "🤲",
+      "refs": "Aal-Imran 3:37–41 · Maryam 19:2–15 · Al-Anbiya 21:89–90",
+      "verse": "21:89",
+      "paragraphs": [
+        "Prophet Zakariya was very old. His hair was white, his bones were weak, and he and his wife had no children.",
+        "Zakariya took care of young Maryam. Whenever he visited her prayer room, he found food there. “Maryam, where did this come from?” he asked. “It is from Allah,” she said. “Allah gives to whoever He wants, without counting.”",
+        "Seeing this, Zakariya prayed to his Lord quietly: “My Lord, do not leave me alone without a child — and You are the best of inheritors.”",
+        "The angels brought him good news: a son named Yahya! Zakariya said, “How can I have a son when I am so old?” Allah said, “It is easy for Me. I created you before, when you were nothing at all.”",
+        "Yahya grew up kind to his parents and never proud. “Peace be upon him,” says the Quran, “the day he was born, the day he dies, and the day he is raised alive.”"
+      ],
+      "lesson": "You can talk to Allah quietly, any time. Never give up on asking Him.",
+      "indonesian": {
+        "title": "Doa Nabi Zakaria yang Lembut",
+        "paragraphs": [
+          "Nabi Zakaria sudah sangat tua. Rambutnya sudah putih, tulangnya sudah lemah, dan ia serta istrinya belum dikaruniai anak.",
+          "Nabi Zakaria mengasuh Maryam yang masih muda. Setiap kali ia masuk ke mihrab tempat Maryam beribadah, ia mendapati makanan di sana. “Wahai Maryam, dari mana ini?” tanyanya. “Ini dari Allah,” jawab Maryam. “Allah memberi rezeki kepada siapa yang Dia kehendaki tanpa perhitungan.”",
+          "Melihat itu, Nabi Zakaria berdoa kepada Tuhannya dengan suara lembut: “Ya Tuhanku, janganlah Engkau biarkan aku hidup seorang diri tanpa keturunan — dan Engkaulah ahli waris yang terbaik.”",
+          "Para malaikat membawa kabar gembira kepadanya: seorang putra bernama Yahya! Nabi Zakaria berkata, “Bagaimana aku bisa punya anak, padahal aku sudah sangat tua?” Allah berfirman, “Itu mudah bagi-Ku. Aku telah menciptakanmu sebelumnya, padahal engkau belum ada sama sekali.”",
+          "Yahya tumbuh menjadi anak yang berbakti kepada orang tuanya dan tidak sombong. “Kesejahteraan atasnya,” firman Allah dalam Al-Qur'an, “pada hari ia dilahirkan, pada hari ia wafat, dan pada hari ia dibangkitkan hidup kembali.”"
+        ],
+        "lesson": "Kamu bisa berbicara kepada Allah dengan pelan, kapan saja. Jangan pernah berhenti berdoa kepada-Nya."
+      }
+    },
+    {
+      "title": "Maryam and the Date Palm",
+      "emoji": "🌴",
+      "refs": "Maryam 19:16–26",
+      "verse": "19:25",
+      "paragraphs": [
+        "Maryam was a pure and good young woman who worshipped Allah. One day, an angel came to her with a message: “I am a messenger from your Lord, to give you a pure son.”",
+        "Maryam was amazed. “How can I have a son, when I have no husband?” The angel said, “It is easy for Allah.”",
+        "Later, Maryam went to a place far away. When the time came for the baby to be born, she held on to the trunk of a palm tree. She felt tired and sad.",
+        "Then a voice called to her from below: “Do not be sad! Your Lord has made a stream flow beneath you. And shake the trunk of the palm tree towards you — fresh, ripe dates will fall down for you.”",
+        "“So eat, and drink, and be happy.” Maryam's baby was Prophet Isa — and the next story is about him!"
+      ],
+      "lesson": "Allah always provides. Do your part — like shaking the tree — and trust Him for the rest.",
+      "indonesian": {
+        "title": "Maryam dan Pohon Kurma",
+        "paragraphs": [
+          "Maryam adalah perempuan muda yang suci dan saleh, yang tekun beribadah kepada Allah. Suatu hari, seorang malaikat datang kepadanya membawa pesan: “Sesungguhnya aku adalah utusan Tuhanmu, untuk memberimu seorang anak laki-laki yang suci.”",
+          "Maryam heran. “Bagaimana aku bisa punya anak, padahal aku tidak bersuami?” Malaikat itu berkata, “Itu mudah bagi Allah.”",
+          "Kemudian Maryam pergi ke tempat yang jauh. Ketika tiba saatnya bayi itu lahir, ia bersandar pada pangkal pohon kurma. Ia merasa lelah dan sedih.",
+          "Lalu terdengar seruan dari bawahnya: “Janganlah engkau bersedih! Tuhanmu telah menjadikan anak sungai di bawahmu. Dan goyangkanlah pangkal pohon kurma itu ke arahmu — buah kurma yang masak dan segar akan berjatuhan untukmu.”",
+          "“Maka makan, minum, dan bersenang hatilah.” Bayi Maryam itu adalah Nabi Isa — dan cerita berikutnya tentang beliau!"
+        ],
+        "lesson": "Allah selalu memberi rezeki. Lakukan bagianmu — seperti menggoyangkan pohon — dan serahkan sisanya kepada Allah."
+      }
+    },
+    {
+      "title": "Isa, the Baby Who Spoke",
+      "emoji": "🕊️",
+      "refs": "Maryam 19:27–33 · Aal-Imran 3:49 · Al-Ma'idah 5:110",
+      "verse": "19:30",
+      "paragraphs": [
+        "Maryam carried baby Isa back to her people. They were shocked and said unkind things. Maryam did not argue — she just pointed to the baby.",
+        "“How can we talk to a baby in the cradle?” they said. Then baby Isa spoke! “I am the servant of Allah. He has given me the Book and made me a prophet.”",
+        "He said Allah had told him to pray and to give charity as long as he lived, and to be good to his mother. “Peace be upon me the day I was born, the day I die, and the day I am raised alive.”",
+        "When Isa grew up, Allah gave him amazing miracles. By Allah's permission, he made the shape of a bird from clay and breathed into it, and it became a real bird. By Allah's permission, he healed the blind and people with leprosy.",
+        "Isa always reminded people that these miracles were not his own power. They came from Allah, his Lord and theirs."
+      ],
+      "lesson": "Be kind and good to your mother — and remember that every good thing comes from Allah.",
+      "indonesian": {
+        "title": "Nabi Isa, Bayi yang Bisa Berbicara",
+        "paragraphs": [
+          "Maryam menggendong bayi Isa kembali kepada kaumnya. Mereka terkejut dan mengucapkan kata-kata yang menyakitkan. Maryam tidak membantah — ia hanya menunjuk kepada bayinya.",
+          "“Bagaimana kami bisa berbicara dengan bayi yang masih dalam buaian?” kata mereka. Lalu bayi Isa berbicara! “Sesungguhnya aku hamba Allah. Dia memberiku Kitab dan menjadikan aku seorang nabi.”",
+          "Ia berkata bahwa Allah memerintahkannya untuk shalat dan menunaikan zakat selama ia hidup, dan berbakti kepada ibunya. “Kesejahteraan atasku pada hari aku dilahirkan, pada hari aku wafat, dan pada hari aku dibangkitkan hidup kembali.”",
+          "Ketika Isa dewasa, Allah memberinya mukjizat yang menakjubkan. Dengan izin Allah, ia membentuk seekor burung dari tanah liat lalu meniupnya, dan jadilah burung sungguhan. Dengan izin Allah, ia menyembuhkan orang yang buta dan orang yang berpenyakit kusta.",
+          "Nabi Isa selalu mengingatkan orang-orang bahwa mukjizat itu bukan kekuatannya sendiri. Semuanya dari Allah, Tuhannya dan Tuhan mereka."
+        ],
+        "lesson": "Berbuat baiklah dan berbaktilah kepada ibumu — dan ingat, setiap kebaikan datang dari Allah."
+      }
+    },
+    {
+      "title": "Luqman's Advice to His Son",
+      "emoji": "👨‍👦",
+      "refs": "Luqman 31:12–19",
+      "verse": "31:16",
+      "paragraphs": [
+        "Allah gave a man named Luqman wisdom. One day, Luqman sat with his son and gave him some wonderful advice.",
+        "“My son, never worship anything besides Allah.” And in the middle of Luqman's advice, Allah reminds all of us: be good to your parents — your mother carried you with weakness upon weakness.",
+        "“My son, even if something is as small as a mustard seed, hidden inside a rock, or up in the heavens, or deep in the earth, Allah will bring it out. Allah knows even the tiniest things.”",
+        "“My son, pray, tell people to do good, stop them from doing wrong, and be patient with whatever happens to you.”",
+        "“Don't turn your face away from people in pride, and don't walk around showing off. Walk gently, and lower your voice — the ugliest of sounds is the braying of a donkey!”"
+      ],
+      "lesson": "Listen to the good advice of your parents and teachers — Allah even put Luqman's advice in the Quran.",
+      "indonesian": {
+        "title": "Nasihat Luqman kepada Anaknya",
+        "paragraphs": [
+          "Allah memberi seorang laki-laki bernama Luqman hikmah. Suatu hari, Luqman duduk bersama anaknya dan memberinya nasihat yang indah.",
+          "“Wahai anakku, janganlah engkau menyekutukan Allah dengan apa pun.” Dan di tengah nasihat Luqman itu, Allah mengingatkan kita semua: berbaktilah kepada kedua orang tuamu — ibumu telah mengandungmu dalam keadaan lemah yang bertambah-tambah.",
+          "“Wahai anakku, sekalipun sesuatu itu seberat biji sawi, tersembunyi di dalam batu, atau di langit, atau di dalam bumi, Allah akan mendatangkannya. Allah mengetahui hal-hal yang paling kecil sekalipun.”",
+          "“Wahai anakku, dirikanlah shalat, ajaklah orang berbuat baik, cegahlah mereka dari berbuat buruk, dan bersabarlah terhadap apa pun yang menimpamu.”",
+          "“Janganlah memalingkan wajahmu dari manusia karena sombong, dan janganlah berjalan dengan angkuh. Berjalanlah dengan sederhana, dan lunakkanlah suaramu — sesungguhnya seburuk-buruk suara adalah suara keledai!”"
+        ],
+        "lesson": "Dengarkan nasihat baik dari orang tua dan gurumu — Allah bahkan mengabadikan nasihat Luqman di dalam Al-Qur'an."
+      }
+    },
+    {
+      "title": "The Sleepers in the Cave",
+      "emoji": "🐕",
+      "refs": "Al-Kahf 18:9–26",
+      "verse": "18:10",
+      "paragraphs": [
+        "Long ago, there were some young men who believed in Allah, while the people of their town worshipped others. Allah made their hearts strong, and they stood up and said, “Our Lord is the Lord of the heavens and the earth.”",
+        "To keep their faith safe, they went to shelter in a cave. They prayed: “Our Lord, give us mercy from You, and guide us in what we do.”",
+        "Allah made them fall asleep — for years and years! When the sun rose, it moved away from their cave, and when it set, it passed them by. Allah turned them from side to side as they slept, and their dog lay at the entrance with its paws stretched out.",
+        "When they woke up, they asked each other, “How long did we sleep?” “A day, or part of a day,” they said. They sent one of them to town with a silver coin to buy the best food — and told him to be very careful.",
+        "They had really slept for three hundred years, and nine more! Only Allah knows everything about them — even exactly how many they were."
+      ],
+      "lesson": "Allah protects those who hold on to their faith. And when you plan something for tomorrow, say “in sha Allah”.",
+      "indonesian": {
+        "title": "Para Pemuda Penghuni Gua",
+        "paragraphs": [
+          "Dahulu kala, ada beberapa pemuda yang beriman kepada Allah, sementara penduduk kota mereka menyembah selain Allah. Allah meneguhkan hati mereka, dan mereka berdiri lalu berkata, “Tuhan kami adalah Tuhan langit dan bumi.”",
+          "Untuk menjaga iman mereka, mereka berlindung di sebuah gua. Mereka berdoa: “Ya Tuhan kami, berikanlah rahmat kepada kami dari sisi-Mu, dan sempurnakanlah petunjuk yang lurus bagi kami dalam urusan kami.”",
+          "Allah membuat mereka tertidur — bertahun-tahun lamanya! Ketika matahari terbit, ia condong menjauhi gua mereka, dan ketika terbenam, ia melewati mereka. Allah membolak-balikkan badan mereka ke kanan dan ke kiri selama mereka tidur, dan anjing mereka berbaring di pintu gua sambil menjulurkan kedua kaki depannya.",
+          "Ketika mereka bangun, mereka saling bertanya, “Berapa lama kita tidur?” “Sehari, atau sebagian hari,” jawab mereka. Mereka mengutus salah seorang dari mereka ke kota membawa uang perak untuk membeli makanan yang paling baik — dan berpesan agar ia sangat berhati-hati.",
+          "Sebenarnya mereka telah tidur selama tiga ratus tahun, ditambah sembilan tahun! Hanya Allah yang mengetahui segalanya tentang mereka — bahkan berapa jumlah mereka yang sebenarnya."
+        ],
+        "lesson": "Allah melindungi orang-orang yang teguh memegang imannya. Dan ketika kamu merencanakan sesuatu untuk besok, ucapkan “insya Allah”."
+      }
+    },
+    {
+      "title": "The Man with Two Gardens",
+      "emoji": "🍇",
+      "refs": "Al-Kahf 18:32–44",
+      "verse": "18:39",
+      "paragraphs": [
+        "There were once two men. Allah gave one of them two beautiful gardens full of grapevines, surrounded by date palms, with crops in between and a river flowing through.",
+        "The rich man became proud. He told his friend, “I have more money than you, and more people on my side.” Walking into his garden, he said, “I don't think this will ever end.”",
+        "His friend reminded him: “Have you forgotten the One who created you from dust? When you entered your garden, why didn't you say, ‘Masha Allah — this is what Allah willed. There is no power except with Allah’?”",
+        "Then the gardens were ruined. The proud man wrung his hands with regret over everything he had spent on them.",
+        "He said, “I wish I had never put anyone beside my Lord!” Everything he had was from Allah all along."
+      ],
+      "lesson": "When you see something nice — your own or someone else's — say “Masha Allah”. Everything we have comes from Allah.",
+      "indonesian": {
+        "title": "Pemilik Dua Kebun",
+        "paragraphs": [
+          "Dahulu ada dua orang laki-laki. Allah memberi salah satunya dua kebun yang indah penuh pohon anggur, dikelilingi pohon kurma, dengan ladang di antaranya dan sungai yang mengalir di tengahnya.",
+          "Orang kaya itu menjadi sombong. Ia berkata kepada temannya, “Hartaku lebih banyak darimu, dan pengikutku lebih kuat.” Sambil masuk ke kebunnya, ia berkata, “Aku kira kebun ini tidak akan pernah binasa.”",
+          "Temannya mengingatkannya: “Apakah engkau lupa kepada Allah yang menciptakanmu dari tanah? Mengapa ketika engkau memasuki kebunmu, engkau tidak mengucapkan, ‘Masya Allah — inilah yang dikehendaki Allah. Tidak ada kekuatan kecuali dengan pertolongan Allah’?”",
+          "Kemudian kebun-kebun itu binasa. Orang yang sombong itu membolak-balikkan kedua telapak tangannya karena menyesali semua yang telah ia belanjakan untuk kebunnya.",
+          "Ia berkata, “Seandainya dulu aku tidak menyekutukan Tuhanku dengan sesuatu pun!” Semua yang ia miliki sebenarnya berasal dari Allah."
+        ],
+        "lesson": "Ketika kamu melihat sesuatu yang bagus — milikmu atau milik orang lain — ucapkanlah “Masya Allah”. Semua yang kita miliki berasal dari Allah."
+      }
+    },
+    {
+      "title": "The Garden Owners Who Forgot to Share",
+      "emoji": "🍎",
+      "refs": "Al-Qalam 68:17–33",
+      "verse": "68:29",
+      "paragraphs": [
+        "Some people owned a lovely garden. They made a plan: “Early tomorrow morning, we'll pick all the fruit.” They did not say “in sha Allah”.",
+        "While they slept, something from Allah came over the garden, and by morning it was black and bare.",
+        "The owners woke early and whispered to each other as they went: “Don't let any poor person into the garden today!”",
+        "When they saw the garden, they thought, “We must be lost!” Then they understood: “No — we have lost everything.” The best of them said, “Didn't I tell you to remember Allah?”",
+        "They said, “Glory be to our Lord! We were wrong.” And they turned back to Allah, hoping He would give them something better."
+      ],
+      "lesson": "Share with people in need, say “in sha Allah” about tomorrow, and when you're wrong, turn back to Allah.",
+      "indonesian": {
+        "title": "Pemilik Kebun yang Lupa Berbagi",
+        "paragraphs": [
+          "Ada beberapa orang yang memiliki sebuah kebun yang indah. Mereka membuat rencana: “Besok pagi-pagi sekali, kita petik semua buahnya.” Mereka tidak mengucapkan “insya Allah”.",
+          "Ketika mereka tidur, datanglah sesuatu dari Allah menimpa kebun itu, dan pagi harinya kebun itu menjadi hitam dan gundul.",
+          "Para pemilik kebun bangun pagi-pagi dan saling berbisik sambil berjalan: “Jangan biarkan seorang miskin pun masuk ke kebun hari ini!”",
+          "Ketika mereka melihat kebunnya, mereka berkata, “Kita pasti tersesat!” Lalu mereka sadar: “Bukan — kita telah kehilangan semuanya.” Orang yang paling baik di antara mereka berkata, “Bukankah sudah kukatakan, mengapa kalian tidak mengingat Allah?”",
+          "Mereka berkata, “Mahasuci Tuhan kami! Sungguh, kami adalah orang-orang yang zalim.” Dan mereka kembali kepada Allah, berharap Dia memberi mereka ganti yang lebih baik."
+        ],
+        "lesson": "Berbagilah dengan orang yang membutuhkan, ucapkan “insya Allah” untuk urusan besok, dan ketika kamu salah, kembalilah kepada Allah."
+      }
+    },
+    {
+      "title": "Dhul-Qarnayn Builds a Wall",
+      "emoji": "🧱",
+      "refs": "Al-Kahf 18:83–98",
+      "verse": "18:95",
+      "paragraphs": [
+        "Dhul-Qarnayn was a great ruler. Allah gave him power, and the means to travel far and wide — to where the sun set in the west, and to where it rose in the east.",
+        "Then he came to a place between two mountains. The people there could hardly understand his language. They said, “Ya'juj and Ma'juj are causing trouble in the land. Can we pay you to build a barrier between us and them?”",
+        "Dhul-Qarnayn said, “What my Lord has given me is better than your money. Just help me with your strength, and I will build it.”",
+        "“Bring me pieces of iron!” They filled the gap between the two mountains. “Now blow!” — until the iron glowed like fire. “Now bring me melted copper to pour over it!”",
+        "The wall was so strong that no one could climb over it or dig through it. And Dhul-Qarnayn did not boast. He said, “This is a mercy from my Lord.”"
+      ],
+      "lesson": "Use your strength to help others, work as a team — and remember that your gifts come from Allah.",
+      "indonesian": {
+        "title": "Dzulqarnain Membangun Tembok",
+        "paragraphs": [
+          "Dzulqarnain adalah seorang penguasa yang hebat. Allah memberinya kekuasaan dan jalan untuk bepergian jauh — ke tempat terbenamnya matahari di barat, dan ke tempat terbitnya di timur.",
+          "Lalu ia sampai di sebuah tempat di antara dua gunung. Penduduk di sana hampir tidak memahami bahasanya. Mereka berkata, “Ya'juj dan Ma'juj membuat kerusakan di bumi. Bolehkah kami membayarmu untuk membangun dinding penghalang antara kami dan mereka?”",
+          "Dzulqarnain berkata, “Apa yang telah diberikan Tuhanku kepadaku lebih baik daripada upahmu. Bantulah aku saja dengan tenaga kalian, dan aku akan membangunnya.”",
+          "“Berilah aku potongan-potongan besi!” Mereka menutup celah di antara dua gunung itu. “Tiuplah!” — sampai besi itu membara seperti api. “Sekarang bawakan aku tembaga cair untuk kutuangkan ke atasnya!”",
+          "Tembok itu begitu kuat sehingga tak seorang pun bisa mendakinya atau melubanginya. Dan Dzulqarnain tidak menyombongkan diri. Ia berkata, “Ini adalah rahmat dari Tuhanku.”"
+        ],
+        "lesson": "Gunakan kekuatanmu untuk menolong orang lain, bekerja samalah — dan ingat bahwa semua kelebihanmu berasal dari Allah."
+      }
+    },
+    {
+      "title": "The Army of the Elephant",
+      "emoji": "🐘",
+      "refs": "Al-Fil 105:1–5",
+      "verse": "105:1",
+      "paragraphs": [
+        "The history books tell us that, a little before Prophet Muhammad (peace be upon him) was born, a ruler named Abraha marched towards Makkah with a huge army and an elephant. He wanted to destroy the Ka'bah.",
+        "The people of Makkah could not fight such an army. But the Ka'bah is the House of Allah.",
+        "Allah tells us what happened in Surah Al-Fil. He sent birds, flock after flock, which pelted the army with stones of baked clay.",
+        "Their plan failed completely. The army was left like straw that has been chewed up and eaten.",
+        "This whole story is only five verses long. It's Surah Al-Fil, number 105 — you can practise reciting it in this app!"
+      ],
+      "lesson": "No army is stronger than Allah. He protects His House.",
+      "indonesian": {
+        "title": "Pasukan Bergajah",
+        "paragraphs": [
+          "Buku-buku sejarah menceritakan bahwa, tidak lama sebelum Nabi Muhammad shallallahu 'alaihi wa sallam lahir, seorang penguasa bernama Abrahah berangkat menuju Makkah dengan pasukan yang sangat besar dan seekor gajah. Ia ingin menghancurkan Ka'bah.",
+          "Penduduk Makkah tidak sanggup melawan pasukan sebesar itu. Tetapi Ka'bah adalah Rumah Allah.",
+          "Allah menceritakan apa yang terjadi dalam Surah Al-Fil. Dia mengirim burung-burung yang berbondong-bondong, yang melempari pasukan itu dengan batu dari tanah yang terbakar.",
+          "Rencana mereka gagal total. Pasukan itu dibuat seperti daun-daun yang dimakan ulat.",
+          "Seluruh kisah ini hanya lima ayat. Itulah Surah Al-Fil, surah ke-105 — kamu bisa latihan membacanya di aplikasi ini!"
+        ],
+        "lesson": "Tidak ada pasukan yang lebih kuat dari Allah. Dia melindungi Rumah-Nya."
+      }
+    },
+    {
+      "title": "The First Word: Read!",
+      "emoji": "📖",
+      "refs": "Al-'Alaq 96:1–5 · Al-Qadr 97:1",
+      "verse": "96:1",
+      "paragraphs": [
+        "Before he became a prophet, Muhammad (peace be upon him) liked to go to a cave called Hira, on a mountain near Makkah, to think and worship quietly.",
+        "In the month of Ramadan, in that cave, the angel Jibril came to him with the very first words of the Quran:",
+        "“Read, in the name of your Lord who created — created people from a clinging substance. Read, and your Lord is the Most Generous — who taught by the pen, taught people what they did not know.”",
+        "Those were the first verses of all. Over twenty-three years, more and more came down, until they made the whole Quran.",
+        "And now you are learning to read and recite it too! You can practise Surah Al-'Alaq, number 96, in this app."
+      ],
+      "lesson": "Reading and learning are a gift from Allah. Every time you recite the Quran, you follow that very first word: Read!",
+      "indonesian": {
+        "title": "Kata Pertama: Bacalah!",
+        "paragraphs": [
+          "Sebelum menjadi nabi, Muhammad shallallahu 'alaihi wa sallam suka pergi ke sebuah gua bernama Hira, di sebuah gunung dekat Makkah, untuk merenung dan beribadah dengan tenang.",
+          "Pada bulan Ramadhan, di gua itu, Malaikat Jibril datang kepadanya membawa kata-kata pertama Al-Qur'an:",
+          "“Bacalah dengan nama Tuhanmu yang menciptakan — menciptakan manusia dari segumpal darah. Bacalah, dan Tuhanmulah Yang Maha Mulia — yang mengajar dengan pena, mengajarkan manusia apa yang tidak diketahuinya.”",
+          "Itulah ayat-ayat yang pertama kali turun. Selama dua puluh tiga tahun, ayat-ayat lain terus turun, sampai lengkap menjadi seluruh Al-Qur'an.",
+          "Dan sekarang kamu juga sedang belajar membaca dan melantunkannya! Kamu bisa latihan Surah Al-'Alaq, surah ke-96, di aplikasi ini."
+        ],
+        "lesson": "Membaca dan belajar adalah anugerah dari Allah. Setiap kali kamu membaca Al-Qur'an, kamu mengikuti kata yang pertama itu: Bacalah!"
+      }
+    },
+    {
+      "title": "Two in the Cave",
+      "emoji": "⛰️",
+      "refs": "At-Tawbah 9:40",
+      "verse": "9:40",
+      "paragraphs": [
+        "The people of Makkah were being cruel to the Muslims, and they drove Prophet Muhammad (peace be upon him) out of the city. The history books tell us his best friend, Abu Bakr, travelled with him to Madinah.",
+        "On the way, they hid in a cave called Thawr. The people chasing them came very close — right up to the cave!",
+        "Abu Bakr was worried. But the Prophet said to him, “Do not be sad. Allah is with us.”",
+        "Allah tells us this in the Quran: He sent down His calm and peace upon the Prophet, and supported him with soldiers that no one could see.",
+        "The people chasing them went away, and the two friends reached Madinah safely."
+      ],
+      "lesson": "When you're afraid, remember the Prophet's words: “La tahzan, innallaha ma'ana” — do not be sad, Allah is with us.",
+      "indonesian": {
+        "title": "Berdua di Dalam Gua",
+        "paragraphs": [
+          "Penduduk Makkah berbuat kejam kepada kaum Muslimin, dan mereka mengusir Nabi Muhammad shallallahu 'alaihi wa sallam dari kota itu. Buku-buku sejarah menceritakan bahwa sahabat terbaiknya, Abu Bakar, ikut bersamanya hijrah ke Madinah.",
+          "Dalam perjalanan, mereka bersembunyi di sebuah gua bernama Tsur. Orang-orang yang mengejar mereka datang sangat dekat — sampai ke mulut gua!",
+          "Abu Bakar merasa khawatir. Tetapi Nabi berkata kepadanya, “Jangan bersedih. Sesungguhnya Allah bersama kita.”",
+          "Allah menceritakan hal ini di dalam Al-Qur'an: Dia menurunkan ketenangan kepada Nabi, dan menguatkannya dengan bala tentara yang tidak terlihat oleh siapa pun.",
+          "Orang-orang yang mengejar pun pergi, dan kedua sahabat itu sampai di Madinah dengan selamat."
+        ],
+        "lesson": "Ketika kamu takut, ingatlah kata-kata Nabi: “La tahzan, innallaha ma'ana” — jangan bersedih, Allah bersama kita."
+      }
+    }
+  ]
+}

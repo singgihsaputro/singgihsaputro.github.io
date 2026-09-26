@@ -1,7 +1,7 @@
 {
   "name": "Recite Quest",
   "short_name": "Recite",
-  "start_url": "test/",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#6A4CFF",
