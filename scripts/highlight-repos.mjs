@@ -5,13 +5,22 @@
 // Metadata (language, stars, description) is still fetched live so it stays true.
 //
 // `blurb` overrides the repository's own description where that description is
-// weak; leave it out to use whatever GitHub returns.
+// weak; leave it out to use whatever GitHub returns. `language` overrides the
+// language GitHub reports, which is a byte count and can name the wrong stack.
+// `live` is the deployed URL — the card links there instead of to the code.
 import { writeFile } from 'node:fs/promises'
 
 const USER = 'singgihsaputro'
 const OUT = new URL('../data/repos.json', import.meta.url)
 
 const HIGHLIGHTS = [
+  {
+    name: 'quran-reciter',
+    blurb:
+      'A Qur\u2019an reciting game for children: it listens, scores every word, and saves progress',
+    language: 'JavaScript',
+    live: 'https://ayokngaji.my.id',
+  },
   {
     name: 'pokemon-kotlin-multiplatform-mobile',
     blurb: 'Kotlin Multiplatform sample sharing business logic across Android and iOS',
@@ -38,7 +47,8 @@ for (const pick of HIGHLIGHTS) {
   repos.push({
     name: r.name,
     blurb: pick.blurb || r.description || '',
-    language: r.language || '',
+    language: pick.language || r.language || '',
+    ...(pick.live ? { live: pick.live } : {}),
     stars: r.stargazers_count,
     pushed: r.pushed_at.slice(0, 10),
   })

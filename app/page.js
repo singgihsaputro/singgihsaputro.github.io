@@ -253,14 +253,19 @@ export default function Page() {
               {repos.map((r) => (
                 <li key={r.name}>
                   <a
-                    href={`${profile.github}/${r.name}`}
+                    href={r.live || `${profile.github}/${r.name}`}
                     target="_blank"
                     rel="noreferrer"
                     className="group flex flex-wrap items-baseline gap-x-4 gap-y-1 py-3 transition-colors hover:bg-white/3"
                   >
                     <span className="font-mono text-sm transition-colors group-hover:text-accent">
-                      {r.name}
+                      {r.live ? r.live.replace(/^https?:\/\//, '') : r.name}
                     </span>
+                    {r.live && (
+                      <span className="rounded-full border border-accent/40 px-2 py-0.5 font-mono text-[10px] tracking-wide text-accent uppercase">
+                        Live
+                      </span>
+                    )}
                     <span className="grow text-sm text-muted">{r.blurb}</span>
                     {r.language && (
                       <span className="font-mono text-xs text-accent">{r.language}</span>
