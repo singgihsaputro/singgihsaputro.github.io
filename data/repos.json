@@ -1,13 +1,5 @@
 [
   {
-    "name": "quran-reciter",
-    "blurb": "A Qur’an reciting game for children: it listens, scores every word, and saves progress",
-    "language": "JavaScript",
-    "live": "https://ayokngaji.my.id",
-    "stars": 0,
-    "pushed": "2026-10-07"
-  },
-  {
     "name": "pokemon-kotlin-multiplatform-mobile",
     "blurb": "Kotlin Multiplatform sample sharing business logic across Android and iOS",
     "language": "Kotlin",

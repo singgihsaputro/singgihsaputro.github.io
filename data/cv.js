@@ -231,6 +231,28 @@ export const projects = [
   },
 ]
 
+// Open-source side projects: live, free, and open to contributions.
+export const openSource = [
+  {
+    name: 'Ayok Ngaji',
+    icon: '/oss/ayok-ngaji.png',
+    live: 'https://ayokngaji.my.id',
+    repo: 'https://github.com/singgihsaputro/quran-reciter',
+    description:
+      'A Qur\u2019an reciting game for children. It listens while they recite, lights up every word it hears and gives stars, with hijaiyah flash cards and a bedtime story for every night.',
+    tags: ['PWA', 'Web Speech API', 'Vercel', 'Turso'],
+  },
+  {
+    name: 'Smart Worksheet',
+    icon: '/oss/smart-worksheet.png',
+    live: 'https://ayokmain.my.id',
+    repo: 'https://github.com/singgihsaputro/smart-worksheet',
+    description:
+      'Nineteen playful learning sheets for young children: drag-and-drop puzzles, find-it pictures and naming games they answer by voice, plus flash cards that talk.',
+    tags: ['PWA', 'Pointer Events', 'Speech recognition', 'Vercel'],
+  },
+]
+
 export const awards = [
   {
     title: 'Champion, GoTo Hackathon',

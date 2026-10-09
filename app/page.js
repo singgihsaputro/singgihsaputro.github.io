@@ -3,7 +3,7 @@ import SiteNav from '@/components/SiteNav'
 import CardSpotlight from '@/components/CardSpotlight'
 import LanguageDonut from '@/components/LanguageDonut'
 import {
-  profile, stats, skills, experience, education, projects, awards, languages,
+  profile, stats, skills, experience, education, projects, awards, languages, openSource,
 } from '@/data/cv'
 import repos from '@/data/repos.json'
 
@@ -242,6 +242,70 @@ export default function Page() {
                 </Wrap>
               )
             })}
+          </div>
+
+          {/* open source, open to contributions */}
+          <div className="reveal mt-14">
+            <h3 className="mb-2 font-mono text-xs tracking-[0.15em] text-accent uppercase">
+              Open source · contributions welcome
+            </h3>
+            <p className="mb-5 max-w-2xl text-sm text-muted">
+              Two free, ad-free learning apps for children that I build in the open. Feel free to
+              contribute: issues, ideas and pull requests are all welcome.
+            </p>
+            <div className="grid gap-5 sm:grid-cols-2">
+              {openSource.map((p, i) => (
+                <div
+                  key={p.name}
+                  className="reveal card flex flex-col rounded-2xl border border-line bg-ink-2 p-6"
+                  style={{ '--d': `${i * 60}ms` }}
+                >
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={p.icon}
+                      alt=""
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      className="size-10 shrink-0 rounded-xl border border-line"
+                    />
+                    <div>
+                      <h4 className="font-medium">{p.name}</h4>
+                      <p className="mt-0.5 font-mono text-xs text-accent">{p.live.replace(/^https?:\/\//, '')}</p>
+                    </div>
+                    <span className="ml-auto rounded-full border border-accent/40 px-2 py-0.5 font-mono text-[10px] tracking-wide text-accent uppercase">
+                      Live
+                    </span>
+                  </div>
+                  <p className="mt-4 grow text-sm text-muted">{p.description}</p>
+                  <ul className="mt-5 flex flex-wrap gap-1.5">
+                    {p.tags.map((t) => (
+                      <li key={t} className="rounded-md bg-accent/10 px-2 py-0.5 font-mono text-xs text-accent">
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-full bg-accent px-4 py-2 text-sm font-medium text-ink transition-transform hover:scale-[1.03]"
+                    >
+                      Open app ↗
+                    </a>
+                    <a
+                      href={p.repo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-full border border-line px-4 py-2 text-sm text-muted transition-colors hover:border-accent/50 hover:text-fg"
+                    >
+                      Code &amp; contribute ↗
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* side projects, compact */}

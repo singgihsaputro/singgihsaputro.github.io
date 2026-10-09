@@ -15,13 +15,6 @@ const OUT = new URL('../data/repos.json', import.meta.url)
 
 const HIGHLIGHTS = [
   {
-    name: 'quran-reciter',
-    blurb:
-      'A Qur\u2019an reciting game for children: it listens, scores every word, and saves progress',
-    language: 'JavaScript',
-    live: 'https://ayokngaji.my.id',
-  },
-  {
     name: 'pokemon-kotlin-multiplatform-mobile',
     blurb: 'Kotlin Multiplatform sample sharing business logic across Android and iOS',
   },
