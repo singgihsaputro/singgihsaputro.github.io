@@ -4,7 +4,7 @@
 // more than a day old. Forks and private repositories are left out. On any
 // failure the committed file stays as it is and the build uses that.
 import { writeFile } from 'node:fs/promises'
-import { GROUPS, HIDDEN, groupOf } from '../data/repo-groups.mjs'
+import { GROUPS, HIDDEN, groupOf, languageOf } from '../data/repo-groups.mjs'
 
 const USER = 'singgihsaputro'
 const OUT = new URL('../data/all-repos.json', import.meta.url)
@@ -30,16 +30,19 @@ for (let page = 1; ; page++) {
 const order = new Map(GROUPS.map((g, i) => [g.id, i]))
 const repos = all
   .filter((r) => !r.fork && !r.private && !HIDDEN.includes(r.name))
-  .map((r) => ({
-    name: r.name,
-    description: r.description ?? '',
-    language: r.language ?? '',
-    stars: r.stargazers_count,
-    homepage: r.homepage || '',
-    archived: r.archived,
-    created: r.created_at.slice(0, 10),
-    group: groupOf(r.name, r.created_at),
-  }))
+  .map((r) => {
+    const group = groupOf(r.name, r.created_at)
+    return {
+      name: r.name,
+      description: r.description ?? '',
+      language: languageOf(group, r.language),
+      stars: r.stargazers_count,
+      homepage: r.homepage || '',
+      archived: r.archived,
+      created: r.created_at.slice(0, 10),
+      group,
+    }
+  })
   .sort((a, b) => order.get(a.group) - order.get(b.group) || b.created.localeCompare(a.created) || a.name.localeCompare(b.name))
 
 // A near-empty answer is a GitHub hiccup, not a deleted account.

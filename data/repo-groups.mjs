@@ -13,7 +13,8 @@ export const GROUPS = [
   { id: 'web', label: 'Web apps', nightly: true, prefixes: ['web-'] },
   { id: 'backend', label: 'Backends', nightly: true, prefixes: ['backend-'] },
   { id: 'freelance', label: 'Freelance web apps', nightly: true, prefixes: ['freelance-'] },
-  { id: 'flutter', label: 'Flutter samples', prefixes: ['flutter_'] },
+  // GitHub counts generated platform code (C++, Makefiles); these are all Flutter.
+  { id: 'flutter', label: 'Flutter samples', prefixes: ['flutter_'], language: 'Dart' },
   { id: 'early', label: 'Early work, 2016–2019' },
 ]
 
@@ -22,6 +23,11 @@ export function groupOf(name, created) {
   const byPrefix = GROUPS.find((g) => g.prefixes?.some((p) => name.startsWith(p)))
   if (byPrefix) return byPrefix.id
   return created < '2020' ? 'early' : 'projects'
+}
+
+/** The language to show: the group's own, where it has one, over GitHub's guess. */
+export function languageOf(group, githubLanguage) {
+  return GROUPS.find((g) => g.id === group)?.language || githubLanguage || ''
 }
 
 /** Repositories never listed: the profile README repository itself. */

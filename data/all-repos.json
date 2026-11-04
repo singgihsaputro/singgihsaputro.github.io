@@ -582,7 +582,7 @@
   {
     "name": "flutter_animation_sample",
     "description": "",
-    "language": "Makefile",
+    "language": "Dart",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -622,7 +622,7 @@
   {
     "name": "flutter_statefull_stateless_sample",
     "description": "",
-    "language": "C++",
+    "language": "Dart",
     "stars": 0,
     "homepage": "",
     "archived": false,
