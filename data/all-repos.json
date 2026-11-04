@@ -10,69 +10,39 @@
     "group": "projects"
   },
   {
-    "name": "daily-projects",
-    "description": "",
-    "language": "",
+    "name": "smart-worksheet",
+    "description": "Smart Worksheet by childplay — free, ad-free learning games and talking flash cards for young children, in the browser (Bahasa Indonesia)",
+    "language": "JavaScript",
     "stars": 0,
-    "homepage": "",
+    "homepage": "https://ayokmain.my.id",
     "archived": false,
-    "created": "2026-11-03",
+    "created": "2026-10-08",
     "group": "projects"
   },
   {
     "name": "kids-activity-books",
     "description": "Printable activity books for ages 1-5, one folder per book",
-    "language": "",
+    "language": "Python",
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2026-10-31",
-    "group": "projects"
-  },
-  {
-    "name": "smart-worksheet",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2026-10-16",
+    "created": "2026-10-07",
     "group": "projects"
   },
   {
     "name": "quran-reciter",
-    "description": "",
-    "language": "",
+    "description": "Ayok Ngaji — a free, ad-free Qur'an reciting game for children: it listens, lights up every word and gives stars. Hijaiyah flash cards and bedtime stories too.",
+    "language": "HTML",
     "stars": 0,
-    "homepage": "",
+    "homepage": "https://ayokngaji.my.id",
     "archived": false,
-    "created": "2026-10-09",
-    "group": "projects"
-  },
-  {
-    "name": "singgihsaputro.github.io",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2026-10-09",
-    "group": "projects"
-  },
-  {
-    "name": "weekly-checklist",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2026-09-26",
+    "created": "2026-09-23",
     "group": "projects"
   },
   {
     "name": "kotlin-dsa",
-    "description": "",
-    "language": "",
+    "description": "Data structures and algorithms in Kotlin — ten interview problems with reasoning, complexity analysis and 47 tests",
+    "language": "Kotlin",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -80,8 +50,38 @@
     "group": "projects"
   },
   {
+    "name": "daily-projects",
+    "description": "A small app a night, built by a scheduled cloud agent — Android, iOS, backend, web",
+    "language": "Kotlin",
+    "stars": 0,
+    "homepage": "",
+    "archived": false,
+    "created": "2026-09-09",
+    "group": "projects"
+  },
+  {
+    "name": "singgihsaputro.github.io",
+    "description": "Personal CV landing page — Next.js static export + Tailwind, deployed to GitHub Pages",
+    "language": "JavaScript",
+    "stars": 1,
+    "homepage": "https://singgihsaputro.github.io/",
+    "archived": false,
+    "created": "2026-09-09",
+    "group": "projects"
+  },
+  {
+    "name": "weekly-checklist",
+    "description": "Weekly checklist app — React + Vite frontend, Express + SQLite backend, single process in production",
+    "language": "JavaScript",
+    "stars": 0,
+    "homepage": "https://weekly-checklist-xnk2.vercel.app",
+    "archived": false,
+    "created": "2026-09-08",
+    "group": "projects"
+  },
+  {
     "name": "pokemon-kotlin-multiplatform-mobile",
-    "description": "",
+    "description": "Sample repo implmeen Kotlin Multiplatform for Mobile (Android/iOS",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -96,7 +96,7 @@
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2024-05-03",
+    "created": "2024-05-02",
     "group": "projects"
   },
   {
@@ -110,8 +110,18 @@
     "group": "projects"
   },
   {
+    "name": "android-flashcards",
+    "description": "Android flashcard trainer in Jetpack Compose with a requeue-on-miss study loop",
+    "language": "Kotlin",
+    "stars": 0,
+    "homepage": "",
+    "archived": false,
+    "created": "2026-11-04",
+    "group": "android"
+  },
+  {
     "name": "android-budget-envelopes",
-    "description": "An Android app that splits a month's budget into spending envelopes, shows how much is left in each, flags the ones that are nearly empty or overspent, and works out what you can safely spend per day.",
+    "description": "Android envelope budgeting app (Compose, mock data)",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -121,7 +131,7 @@
   },
   {
     "name": "android-caffeine-tracker",
-    "description": "An Android app that logs your coffee, tea and energy drinks and estimates how much caffeine is still active in your body and when it will drop low enough for sleep.",
+    "description": "Android app that estimates active caffeine and sleep-safe time (Compose, mock data)",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -131,7 +141,7 @@
   },
   {
     "name": "android-habit-streaks",
-    "description": "An Android app that lists your daily habits with current and best streaks, a seven-day dot strip per habit, and a one-tap check-in for today.",
+    "description": "Android habit tracker with streaks and a 7-day check-in strip (Compose, mock data)",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -141,7 +151,7 @@
   },
   {
     "name": "android-countdown",
-    "description": "An Android app that shows live days/hours/minutes/seconds countdowns to your upcoming events, with past events listed below.",
+    "description": "Android countdown timer app: live countdowns to upcoming events (Compose, Material 3)",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -151,7 +161,7 @@
   },
   {
     "name": "android-qr-generator",
-    "description": "A single-screen Android app that turns typed text or a URL into a scannable QR code, offers a few starter presets, and keeps a reusable history of recent codes.",
+    "description": "A single-screen Android app that turns typed text or a URL into a scannable QR code, with presets and history",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -161,7 +171,7 @@
   },
   {
     "name": "android-password-generator",
-    "description": "A single-screen Android app that generates a random password from adjustable length and character-set options, rates its strength, and keeps a running history of what it generated.",
+    "description": "Random password generator with strength meter and generation history, built with Kotlin and Jetpack Compose",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -171,7 +181,7 @@
   },
   {
     "name": "android-water-intake-log",
-    "description": "A single-screen Android app that logs drinks against a daily water goal and shows progress with a running total.",
+    "description": "A single-screen Android app that logs drinks against a daily water goal, built with Jetpack Compose and Material 3.",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -191,7 +201,7 @@
   },
   {
     "name": "androidlib-compose-shimmer",
-    "description": "An Android library of Jetpack Compose skeleton loaders: a `shimmer()` modifier, a `skeleton()` placeholder modifier, and ready-made list-row placeholders.",
+    "description": "Compose skeleton and shimmer loaders as an Android library",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -201,7 +211,7 @@
   },
   {
     "name": "androidlib-pii-redaction-log",
-    "description": "An Android logging wrapper that scrubs emails, Indonesian phone numbers, NIK, card numbers, tokens and `password=...` pairs from every message and stack trace before it reaches logcat (or any sink you plug in).",
+    "description": "Android logging wrapper that redacts PII (emails, phones, NIK, cards, tokens) before it hits logcat",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -211,7 +221,7 @@
   },
   {
     "name": "androidlib-crash-breadcrumbs",
-    "description": "An Android library that keeps a ring buffer of the last N things your app did and writes them next to the stack trace when the app crashes, so the next launch can show what the user did before it died.",
+    "description": "Android library: ring buffer of recent app events written alongside crash stack traces",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -221,7 +231,7 @@
   },
   {
     "name": "androidlib-id-formatters",
-    "description": "A dependency-free Kotlin library that formats and parses Rupiah, normalises Indonesian mobile numbers, and structurally validates NIK (national ID) numbers.",
+    "description": "Kotlin library for Rupiah, phone number and NIK formatting/validation on Android",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -231,7 +241,7 @@
   },
   {
     "name": "androidlib-retry-backoff",
-    "description": "Retry a suspending call or a `Flow` with exponential backoff and full jitter, in",
+    "description": "Retry a suspending call or a Flow with exponential backoff and full jitter — Kotlin, coroutines, with a sample app",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -241,7 +251,7 @@
   },
   {
     "name": "ios-plant-watering",
-    "description": "A single-screen SwiftUI app that lists your houseplants by urgency, shows which are overdue or due today, and lets you mark one watered with a tap.",
+    "description": "SwiftUI plant watering schedule with overdue tracking",
     "language": "Swift",
     "stars": 0,
     "homepage": "",
@@ -251,7 +261,7 @@
   },
   {
     "name": "ios-mood-log",
-    "description": "A single-screen SwiftUI app where you pick today's mood and a short note, and see your average, current streak, best day and history.",
+    "description": "SwiftUI mood journal with streaks and history (mock data)",
     "language": "Swift",
     "stars": 0,
     "homepage": "",
@@ -261,7 +271,7 @@
   },
   {
     "name": "ios-checklist",
-    "description": "A single-screen SwiftUI app that loads starter checklists (trip, moving day, leaving the house), lets you tick items off with a progress bar, and add, delete or reset items.",
+    "description": "SwiftUI checklist app with progress tracking and mock starter lists",
     "language": "Swift",
     "stars": 0,
     "homepage": "",
@@ -271,7 +281,7 @@
   },
   {
     "name": "ios-tip-calculator",
-    "description": "A single-screen SwiftUI app that suggests a tip for the country you are eating in, then splits the total between diners down to the cent.",
+    "description": "SwiftUI tip calculator with per-country tipping suggestions and exact bill splitting",
     "language": "Swift",
     "stars": 0,
     "homepage": "",
@@ -281,7 +291,7 @@
   },
   {
     "name": "ios-sleep-log",
-    "description": "A single-screen SwiftUI app that shows the last week of sleep as a bar-per-night log with an average, and lets you log tonight's hours and quality.",
+    "description": "A single-screen SwiftUI app for logging nightly sleep hours and quality with a mock weekly log",
     "language": "Swift",
     "stars": 0,
     "homepage": "",
@@ -291,7 +301,7 @@
   },
   {
     "name": "ios-packing-list",
-    "description": "A single-screen SwiftUI app that groups a trip's packing items by category (Clothing, Toiletries, Electronics, Documents) and lets you check each one off, with a progress bar showing how much is packed.",
+    "description": "A single-screen SwiftUI packing checklist, grouped by category with a progress bar",
     "language": "Swift",
     "stars": 0,
     "homepage": "",
@@ -301,7 +311,7 @@
   },
   {
     "name": "ios-habit-tracker",
-    "description": "A single-screen SwiftUI app that lists daily habits, shows each one's streak and last-7-day history, and lets you check it off for today.",
+    "description": "A single-screen SwiftUI habit tracker with streaks and mock data",
     "language": "Swift",
     "stars": 0,
     "homepage": "",
@@ -311,7 +321,7 @@
   },
   {
     "name": "kmpfullstack-note-store",
-    "description": "A pinned-notes app where every note lives on one Ktor server and shows up, with the same search and pin-first ordering, in the Android, web and iOS clients: one Kotlin domain in `shared/`, four front ends.",
+    "description": "Pinned-notes store: one Kotlin domain, Ktor server plus Android, web and iOS clients",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -321,7 +331,7 @@
   },
   {
     "name": "kmpfullstack-habit-sync",
-    "description": "A habit tracker where every check-in lives on one Ktor server and shows up, with the same streak maths, in the Android, web and iOS clients: one Kotlin domain in `shared/`, four front ends.",
+    "description": "Habit tracker with Ktor server and shared Kotlin domain across Android, web and iOS",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -331,8 +341,8 @@
   },
   {
     "name": "kmpfullstack-shopping-list",
-    "description": "A shopping list you can tick off, filter by aisle and clear once you are at the till: one Kotlin domain in `shared/`, a Ktor API in `server/`, and Android, web and iOS clients that all talk to it.",
-    "language": "Kotlin",
+    "description": "Kotlin Multiplatform shared shopping list: Ktor API plus Android, web and iOS clients",
+    "language": "Makefile",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -341,7 +351,7 @@
   },
   {
     "name": "kmpfullstack-bookmark-store",
-    "description": "A tagged bookmark manager with starring and deletion: one Kotlin domain in `shared/`, a Ktor API in `server/`, and Android, web and iOS clients that all talk to it.",
+    "description": "Kotlin Multiplatform bookmark store: shared domain, Ktor API, Android, web and iOS clients",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -351,7 +361,7 @@
   },
   {
     "name": "kmpfullstack-short-link-service",
-    "description": "A URL shortener: paste a long URL to get a short code back, visiting `/r/<code>` redirects to the original URL and counts the click — with the model, validation, and short-code logic defined once in a Kotlin Multiplatform `shared` module and used by a real Ktor server plus three clients (Android, iOS, web) that all talk to it over HTTP.",
+    "description": "A URL shortener built as one Kotlin Multiplatform repo — shared domain logic, a real Ktor server, and Android/iOS/web clients that all talk to it over HTTP.",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -361,7 +371,7 @@
   },
   {
     "name": "kmp-grocery-list",
-    "description": "A Kotlin Multiplatform grocery list: adding items, checking them off, grouping by aisle category, and tracking cart progress all live in a `shared` module, with a Jetpack Compose screen on Android that lists the fixture grouped by category with a progress bar and an add-item row.",
+    "description": "Kotlin Multiplatform grocery list — shared checklist logic driving a Jetpack Compose screen",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -371,7 +381,7 @@
   },
   {
     "name": "kmp-unit-converter",
-    "description": "A Kotlin Multiplatform unit converter: category selection, unit lookup, and the conversion math live in a `shared` module, with a Jetpack Compose screen on Android that lets you pick a category, choose From/To units, and see the live result.",
+    "description": "Kotlin Multiplatform unit converter (length/weight/volume) with a Compose Android UI, built on a shared conversion engine",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -381,7 +391,7 @@
   },
   {
     "name": "kmp-reading-tracker",
-    "description": "A Kotlin Multiplatform reading tracker: the book list, progress math, and state management live in a `shared` module, with a Jetpack Compose screen on Android that lists books, shows read-progress bars, and lets you log pages.",
+    "description": "Kotlin Multiplatform reading tracker: shared Kotlin business logic, Compose Android UI, mock JSON fixture",
     "language": "Kotlin",
     "stars": 0,
     "homepage": "",
@@ -391,7 +401,7 @@
   },
   {
     "name": "web-meeting-planner",
-    "description": "A Nuxt 4 single-page tool that lays cities' working hours side by side and highlights the hours when everyone is at work, so you can pick a meeting time.",
+    "description": "Nuxt 4 meeting planner that finds shared working hours across time zones",
     "language": "Vue",
     "stars": 0,
     "homepage": "",
@@ -401,7 +411,7 @@
   },
   {
     "name": "web-meal-planner",
-    "description": "A Vue 3 page where you choose a dinner for each day of the week and get a merged shopping list and calorie total automatically.",
+    "description": "Vue 3 weekly meal planner with auto-merged shopping list",
     "language": "JavaScript",
     "stars": 0,
     "homepage": "",
@@ -411,7 +421,7 @@
   },
   {
     "name": "web-image-compressor",
-    "description": "A browser tool that shrinks an image by re-encoding it as JPEG, WebP or PNG at a chosen quality and width, and shows the before/after file sizes side by side.",
+    "description": "Browser-side image compressor built with Vue 3, Vite and Tailwind v4",
     "language": "Vue",
     "stars": 0,
     "homepage": "",
@@ -421,7 +431,7 @@
   },
   {
     "name": "web-markdown-scratchpad",
-    "description": "A two-pane notes app: write Markdown on the left, see it rendered live on the right, with search and autosave.",
+    "description": "Vue 3 + Pinia two-pane Markdown scratchpad with live preview",
     "language": "JavaScript",
     "stars": 0,
     "homepage": "",
@@ -431,7 +441,7 @@
   },
   {
     "name": "web-receipt-scanner",
-    "description": "A single-screen Vue app that runs mock OCR on a picked receipt photo, itemizes it, flags low-confidence lines, and recalculates the total as you correct them.",
+    "description": "A Vue 3 receipt scanner that runs mock OCR on a picked receipt and lets you review/correct flagged low-confidence lines",
     "language": "Vue",
     "stars": 0,
     "homepage": "",
@@ -441,7 +451,7 @@
   },
   {
     "name": "web-currency-converter",
-    "description": "A single-screen React app that converts an amount between currencies using fixture exchange rates, with a full rate table shown below.",
+    "description": "A single-screen React + Tailwind currency converter backed by mock exchange-rate fixtures",
     "language": "TypeScript",
     "stars": 0,
     "homepage": "",
@@ -451,7 +461,7 @@
   },
   {
     "name": "backend-packing-list",
-    "description": "A small TypeScript (Hono) backend that generates a packing list for a trip from a template, scaling clothes by trip length, and tracks what has been packed.",
+    "description": "TypeScript/Hono API that builds and tracks trip packing lists",
     "language": "TypeScript",
     "stars": 0,
     "homepage": "",
@@ -461,7 +471,7 @@
   },
   {
     "name": "backend-currency-converter",
-    "description": "A small Go HTTP API that converts amounts between currencies using a rate table read from a local fixture, rounding results to each currency's minor units.",
+    "description": "Go net/http currency converter API with mock rates behind a RateSource interface",
     "language": "Go",
     "stars": 0,
     "homepage": "",
@@ -471,7 +481,7 @@
   },
   {
     "name": "backend-sleep-log",
-    "description": "A small Rust (Axum) service that records nightly sleep, computes duration across midnight, and summarises a window of nights with average sleep, sleep debt against an 8-hour goal, and bedtime regularity.",
+    "description": "Rust Axum API that logs nightly sleep and summarises duration, sleep debt and regularity",
     "language": "Rust",
     "stars": 0,
     "homepage": "",
@@ -481,7 +491,7 @@
   },
   {
     "name": "backend-reminder-api",
-    "description": "A small FastAPI service for creating reminders, listing them by status (upcoming / overdue / done), and asking what is due in the next N hours.",
+    "description": "FastAPI reminder service with overdue/due-soon queries",
     "language": "Python",
     "stars": 0,
     "homepage": "",
@@ -491,7 +501,7 @@
   },
   {
     "name": "backend-shift-planner",
-    "description": "A small TypeScript backend that manages a workplace shift schedule: list open shifts, assign an employee, and get rejected with a clear reason when the role doesn't match or the employee is already booked at that time.",
+    "description": "A TypeScript/Hono shift-scheduling API with role and overlap conflict checks",
     "language": "TypeScript",
     "stars": 0,
     "homepage": "",
@@ -501,7 +511,7 @@
   },
   {
     "name": "backend-expense-splitter",
-    "description": "A small Go backend that tracks shared group expenses and tells you the minimal set of payments needed to settle up.",
+    "description": "A Go backend that splits shared group expenses and computes minimal settlements",
     "language": "Go",
     "stars": 0,
     "homepage": "",
@@ -511,7 +521,7 @@
   },
   {
     "name": "freelance-leave-tracker",
-    "description": "A manager's leave-approval screen: a queue of pending requests with balance and team-conflict warnings, a month calendar of who is off, and per-employee leave balances.",
+    "description": "Leave approval screen: queue, conflict warnings, team calendar, balances (React 19 + Tailwind v4)",
     "language": "TypeScript",
     "stars": 0,
     "homepage": "",
@@ -521,7 +531,7 @@
   },
   {
     "name": "freelance-mart-pos",
-    "description": "A Vue 3 point-of-sale screen for a small mini-mart: tap or scan products into a cart, take cash with quick-cash buttons, and print an 80 mm receipt with PPN 11% and Rp 100 cash rounding.",
+    "description": "Vue 3 + Tailwind mini-mart point-of-sale with printable receipt",
     "language": "Vue",
     "stars": 0,
     "homepage": "",
@@ -531,7 +541,7 @@
   },
   {
     "name": "freelance-order-board",
-    "description": "A React kitchen order board for a small restaurant: orders move across New → Preparing → Ready → Served columns with one tap, late tickets are flagged by age, and staff can search by table, order number or dish.",
+    "description": "React 19 + Tailwind v4 restaurant kitchen order board (mock data)",
     "language": "TypeScript",
     "stars": 0,
     "homepage": "",
@@ -541,7 +551,7 @@
   },
   {
     "name": "freelance-stock-alerts",
-    "description": "A Vue 3 stock screen for a small shop: it flags low and out-of-stock items, lets staff sell, add or receive stock, and builds a suggested supplier reorder list with an estimated cost.",
+    "description": "Vue 3 + Tailwind stock screen with low-stock alerts and suggested reorder list",
     "language": "Vue",
     "stars": 0,
     "homepage": "",
@@ -551,7 +561,7 @@
   },
   {
     "name": "freelance-invoice-generator",
-    "description": "A single-screen React app where a freelancer picks a client, edits line items, and downloads a formatted PDF invoice with tax and totals calculated automatically.",
+    "description": "React + jsPDF freelance invoice generator with client-side PDF export",
     "language": "TypeScript",
     "stars": 0,
     "homepage": "",
@@ -562,27 +572,27 @@
   {
     "name": "flutter_api_restaurant_sample",
     "description": "",
-    "language": "",
+    "language": "Dart",
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2024-12-19",
+    "created": "2024-12-18",
     "group": "flutter"
   },
   {
     "name": "flutter_animation_sample",
     "description": "",
-    "language": "",
+    "language": "Makefile",
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2024-04-30",
+    "created": "2024-04-29",
     "group": "flutter"
   },
   {
     "name": "flutter_camera_sample",
-    "description": "",
-    "language": "",
+    "description": "Flutter project to simulate integrate camera function basic",
+    "language": "Dart",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -591,18 +601,18 @@
   },
   {
     "name": "flutter_maps_sample",
-    "description": "",
-    "language": "",
+    "description": "Demonstrate google maps integration",
+    "language": "Dart",
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2023-05-29",
+    "created": "2023-05-28",
     "group": "flutter"
   },
   {
     "name": "flutter_api_integration_sample",
-    "description": "",
-    "language": "",
+    "description": "Restaurant Mock Application built by using Flutter",
+    "language": "Dart",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -612,7 +622,7 @@
   {
     "name": "flutter_statefull_stateless_sample",
     "description": "",
-    "language": "",
+    "language": "C++",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -620,39 +630,19 @@
     "group": "flutter"
   },
   {
-    "name": "DesignPattern-Java",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2018-09-16",
-    "group": "early"
-  },
-  {
     "name": "DrinkReminder",
-    "description": "",
+    "description": "This is sample project which is implement kotlin language and instant app",
     "language": "",
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2017-10-26",
-    "group": "early"
-  },
-  {
-    "name": "PopularMovies",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2017-03-26",
+    "created": "2017-09-26",
     "group": "early"
   },
   {
     "name": "SampleContactProvider",
     "description": "",
-    "language": "",
+    "language": "Java",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -660,9 +650,19 @@
     "group": "early"
   },
   {
+    "name": "DesignPattern-Java",
+    "description": "Sample Design Pattern in Java",
+    "language": "Java",
+    "stars": 0,
+    "homepage": "",
+    "archived": false,
+    "created": "2017-02-28",
+    "group": "early"
+  },
+  {
     "name": "DesignPattern-Kotlin",
-    "description": "",
-    "language": "",
+    "description": "Sample Design Pattern in Kotlin",
+    "language": "Kotlin",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -672,7 +672,7 @@
   {
     "name": "SampleRxLoginForm",
     "description": "",
-    "language": "",
+    "language": "Java",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -681,8 +681,8 @@
   },
   {
     "name": "SampleRxJava-RetroLambda",
-    "description": "",
-    "language": "",
+    "description": "Sample RxJava with RetroLambda Java 8",
+    "language": "Java",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -690,19 +690,9 @@
     "group": "early"
   },
   {
-    "name": "SampleRxJava-Retrofit",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2016-10-24",
-    "group": "early"
-  },
-  {
     "name": "SampleKotlin",
-    "description": "",
-    "language": "",
+    "description": "This is sample project Android Apps using Kotlin with Rx and Retrofit",
+    "language": "Kotlin",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -710,9 +700,19 @@
     "group": "early"
   },
   {
+    "name": "SampleRxJava-Retrofit",
+    "description": "This project is just sample using RxJava and Retrofit",
+    "language": "Java",
+    "stars": 1,
+    "homepage": "",
+    "archived": false,
+    "created": "2016-10-18",
+    "group": "early"
+  },
+  {
     "name": "SampleAuthFirebase-Android-",
-    "description": "",
-    "language": "",
+    "description": "This is sample project auth using firebase on Android platform",
+    "language": "Java",
     "stars": 0,
     "homepage": "",
     "archived": false,
@@ -721,99 +721,109 @@
   },
   {
     "name": "BasicLogic",
-    "description": "",
-    "language": "",
+    "description": "This is sample code that solve about logic problem",
+    "language": "Java",
     "stars": 0,
     "homepage": "",
     "archived": false,
     "created": "2016-04-19",
+    "group": "early"
+  },
+  {
+    "name": "PopularMovies",
+    "description": "This is android app that provide information about movie",
+    "language": "Java",
+    "stars": 0,
+    "homepage": "",
+    "archived": false,
+    "created": "2016-04-16",
     "group": "early"
   },
   {
     "name": "Chat-using-Phyton",
-    "description": "",
-    "language": "",
+    "description": "Chat apps desktop using Phyton",
+    "language": "Python",
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2016-04-19",
-    "group": "early"
-  },
-  {
-    "name": "Epharm",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2016-04-19",
-    "group": "early"
-  },
-  {
-    "name": "Evoting",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2016-04-19",
+    "created": "2016-04-07",
     "group": "early"
   },
   {
     "name": "I_Pet",
-    "description": "",
-    "language": "",
+    "description": "Sample web apps with JQUery Mobile",
+    "language": "CSS",
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2016-04-19",
+    "created": "2016-04-07",
     "group": "early"
   },
   {
     "name": "OrangeFruitDetectionUsingBayes",
-    "description": "",
-    "language": "",
-    "stars": 0,
+    "description": "Orange detection image pattern using Bayes Theory",
+    "language": "HTML",
+    "stars": 1,
     "homepage": "",
     "archived": false,
-    "created": "2016-04-19",
-    "group": "early"
-  },
-  {
-    "name": "Web-DSS-AHP",
-    "description": "",
-    "language": "",
-    "stars": 0,
-    "homepage": "",
-    "archived": false,
-    "created": "2016-04-19",
+    "created": "2016-04-07",
     "group": "early"
   },
   {
     "name": "WebChat-BottlePython",
-    "description": "",
+    "description": "Web Chat Sample using Bottle and Python",
     "language": "Python",
     "stars": 2,
     "homepage": "",
     "archived": false,
-    "created": "2016-04-19",
+    "created": "2016-04-07",
     "group": "early"
   },
   {
-    "name": "KumpulinSampah",
-    "description": "",
-    "language": "",
+    "name": "Epharm",
+    "description": "Project ERP about pharmacy sale",
+    "language": "PHP",
     "stars": 0,
     "homepage": "",
     "archived": false,
-    "created": "2016-04-08",
+    "created": "2016-04-05",
+    "group": "early"
+  },
+  {
+    "name": "Evoting",
+    "description": "Aplikasi prototype untuk memvoting calon wakil rakyat",
+    "language": "JavaScript",
+    "stars": 0,
+    "homepage": "",
+    "archived": false,
+    "created": "2016-04-05",
     "group": "early"
   },
   {
     "name": "Flash-Math",
-    "description": "",
-    "language": "",
+    "description": "Mobile game education about math on android platform",
+    "language": "Java",
     "stars": 0,
+    "homepage": "",
+    "archived": false,
+    "created": "2016-04-05",
+    "group": "early"
+  },
+  {
+    "name": "KumpulinSampah",
+    "description": "Apps KumpulinSampah provide us to post, collect and buy rubbish",
+    "language": "Java",
+    "stars": 1,
+    "homepage": "",
+    "archived": false,
+    "created": "2016-04-05",
+    "group": "early"
+  },
+  {
+    "name": "Web-DSS-AHP",
+    "description": "Project website decision support system AHP",
+    "language": "JavaScript",
+    "stars": 2,
     "homepage": "",
     "archived": false,
     "created": "2016-04-05",
