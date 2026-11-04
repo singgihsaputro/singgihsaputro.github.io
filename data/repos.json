@@ -1,5 +1,12 @@
 [
   {
+    "name": "erp",
+    "blurb": "ERP for Indonesian retail and distribution SMEs, one feature a night",
+    "language": "TypeScript",
+    "stars": 0,
+    "pushed": "2026-11-04"
+  },
+  {
     "name": "pokemon-kotlin-multiplatform-mobile",
     "blurb": "Kotlin Multiplatform sample sharing business logic across Android and iOS",
     "language": "Kotlin",

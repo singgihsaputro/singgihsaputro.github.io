@@ -14,6 +14,7 @@ const USER = 'singgihsaputro'
 const OUT = new URL('../data/repos.json', import.meta.url)
 
 const HIGHLIGHTS = [
+  { name: 'erp' },
   {
     name: 'pokemon-kotlin-multiplatform-mobile',
     blurb: 'Kotlin Multiplatform sample sharing business logic across Android and iOS',
@@ -30,7 +31,11 @@ const HIGHLIGHTS = [
 const repos = []
 for (const pick of HIGHLIGHTS) {
   const res = await fetch(`https://api.github.com/repos/${USER}/${pick.name}`, {
-    headers: { 'User-Agent': 'singgihsaputro.github.io', Accept: 'application/vnd.github+json' },
+    headers: {
+      'User-Agent': 'singgihsaputro.github.io',
+      Accept: 'application/vnd.github+json',
+      ...(process.env.GH_TOKEN ? { Authorization: `Bearer ${process.env.GH_TOKEN}` } : {}),
+    },
   })
   if (!res.ok) {
     console.warn(`skipping ${pick.name}: GitHub returned ${res.status}`)

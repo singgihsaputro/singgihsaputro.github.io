@@ -28,6 +28,23 @@ Two fields are deliberately empty:
 - `profile.resume` — drop the PDF in `public/`, set `resume: '/your-cv.pdf'`,
   and a "Download CV" button appears.
 
+## Repositories
+
+Two lists under **Work** come from GitHub rather than `data/cv.js`, and refresh on
+every daily build:
+
+- **Highlighted projects** — a hand-picked few. Choose them in `HIGHLIGHTS` in
+  [`scripts/highlight-repos.mjs`](scripts/highlight-repos.mjs); stars, language and
+  description are fetched live into `data/repos.json`.
+- **Every public repository** — all of them, forks and private ones left out,
+  written to `data/all-repos.json` by [`scripts/all-repos.mjs`](scripts/all-repos.mjs).
+  They are grouped by rules in [`data/repo-groups.mjs`](data/repo-groups.mjs) (name
+  prefix, then creation year), so a new repository files itself. The profile README
+  in `singgihsaputro/singgihsaputro` groups the same way; change both together.
+
+The daily run commits both JSON files back when they changed, so a build that cannot
+reach the GitHub API still shows yesterday's list.
+
 ## Local
 
 ```bash

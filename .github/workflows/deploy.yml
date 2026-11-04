@@ -3,13 +3,13 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # Rebuild daily so stars and languages on the highlighted projects stay current.
+  # Rebuild daily so new repositories, stars and languages show up on their own.
   schedule:
     - cron: '20 2 * * *' # 09:20 Asia/Jakarta
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write # the daily run commits the refreshed repository lists back
   pages: write
   id-token: write
 
@@ -31,7 +31,32 @@ jobs:
       # unreachable the committed data/repos.json is used instead.
       - run: node scripts/highlight-repos.mjs
         continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+      # Every public repository, grouped. Non-fatal for the same reason.
+      - run: node scripts/all-repos.mjs
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
       - run: npm run build
+      # Keep the committed lists in step with GitHub, so a build that cannot reach
+      # the API still shows yesterday's list rather than an old one. Only on the
+      # daily and manual runs; a push made with the workflow token does not start
+      # another deploy.
+      - name: Commit the refreshed repository lists
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: |
+          git add data/repos.json data/all-repos.json
+          if git diff --cached --quiet; then
+            echo "Repository lists unchanged."
+            exit 0
+          fi
+          git config user.name  "Singgih Rochmad Saputro"
+          git config user.email "singgih.rochmad@gmail.com"
+          git commit -m "Refresh the repository lists"
+          git pull --rebase -q origin main
+          git push
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out

@@ -2,10 +2,13 @@ import RotatingRole from '@/components/RotatingRole'
 import SiteNav from '@/components/SiteNav'
 import CardSpotlight from '@/components/CardSpotlight'
 import LanguageDonut from '@/components/LanguageDonut'
+import RepoExplorer from '@/components/RepoExplorer'
 import {
   profile, stats, skills, experience, education, projects, awards, languages, openSource,
 } from '@/data/cv'
 import repos from '@/data/repos.json'
+import allRepos from '@/data/all-repos.json'
+import { GROUPS } from '@/data/repo-groups.mjs'
 
 
 function SectionHead({ n, label, title, sub }) {
@@ -341,6 +344,13 @@ export default function Page() {
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* every public repository, grouped, refreshed on each daily build.
+              Not a .reveal: it is taller than a phone screen many times over, so
+              the 10% visibility threshold would never be met and it would stay hidden. */}
+          <div className="mt-14">
+            <RepoExplorer repos={allRepos} groups={GROUPS} githubUrl={profile.github} />
           </div>
         </section>
 
