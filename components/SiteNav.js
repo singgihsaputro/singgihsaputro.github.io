@@ -2,11 +2,13 @@
 import { useEffect, useState } from 'react'
 
 const NAV = [
-  ['About', 'about'],
-  ['Languages', 'languages'],
+  ['Awards', 'awards'],
   ['Experience', 'experience'],
   ['Work', 'projects'],
-  ['Awards', 'awards'],
+  ['Education', 'education'],
+  ['Skills', 'about'],
+  ['Languages', 'languages'],
+  ['Repositories', 'repositories'],
   ['Contact', 'contact'],
 ]
 
@@ -78,7 +80,7 @@ export default function SiteNav({ links = [] }) {
           singgih<span className="text-accent">.</span>
         </a>
 
-        <div className="hidden items-center gap-7 text-sm md:flex">
+        <div className="hidden items-center gap-7 text-sm lg:flex">
           {NAV.map(([label, id]) => link(label, id))}
         </div>
 
@@ -101,7 +103,7 @@ export default function SiteNav({ links = [] }) {
             aria-expanded={open}
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-controls="mobile-menu"
-            className="focus-ring -mr-2 rounded-md p-2 text-muted transition-colors hover:text-fg md:hidden"
+            className="focus-ring -mr-2 rounded-md p-2 text-muted transition-colors hover:text-fg lg:hidden"
           >
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden>
               <path
@@ -120,7 +122,7 @@ export default function SiteNav({ links = [] }) {
           height to measure and nothing that can collapse to zero. */}
       <div
         id="mobile-menu"
-        className="absolute inset-x-0 top-full border-b border-line bg-ink/95 backdrop-blur-md md:hidden"
+        className="absolute inset-x-0 top-full border-b border-line bg-ink/95 backdrop-blur-md lg:hidden"
         style={{
           opacity: open ? 1 : 0,
           transform: open ? 'translateY(0)' : 'translateY(-8px)',

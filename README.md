@@ -30,8 +30,8 @@ Two fields are deliberately empty:
 
 ## Repositories
 
-Two lists under **Work** come from GitHub rather than `data/cv.js`, and refresh on
-every daily build:
+The **Repositories** section, last before Contact, holds two lists that come from
+GitHub rather than `data/cv.js` and refresh on every daily build:
 
 - **Highlighted projects** — a hand-picked few. Choose them in `HIGHLIGHTS` in
   [`scripts/highlight-repos.mjs`](scripts/highlight-repos.mjs); stars, language and

@@ -111,52 +111,29 @@ export default function Page() {
           </dl>
         </section>
 
-        {/* ── skills ──────────────────────────────────────── */}
-        <section id="about" className="border-t border-line py-24">
-          <SectionHead
-            n={1}
-            label="What I work with"
-            title="Skills"
-            sub="Day-to-day tools, roughly in the order I reach for them."
-          />
-          <div className="grid gap-6 sm:grid-cols-2">
-            {skills.map((s, i) => (
-              <div
-                key={s.group}
+        {/* ── awards ──────────────────────────────────────── */}
+        <section id="awards" className="border-t border-line py-24">
+          <SectionHead n={1}
+            label="Recognition" title="Awards" />
+          <ul className="grid gap-5 sm:grid-cols-2">
+            {awards.map((a, i) => (
+              <li
+                key={a.title}
                 className="reveal card rounded-2xl border border-line bg-ink-2 p-6"
-                style={{ '--d': `${i * 70}ms` }}
+                style={{ '--d': `${i * 60}ms` }}
               >
-                <h3 className="mb-4 font-mono text-xs tracking-[0.15em] text-accent uppercase">
-                  {s.group}
-                </h3>
-                <ul className="flex flex-wrap gap-2">
-                  {s.items.map((item) => (
-                    <li key={item} className="rounded-full border border-line px-3 py-1 text-sm text-muted">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                <p className="font-mono text-xs text-muted">{a.date}</p>
+                <h3 className="mt-2 font-medium">{a.title}</h3>
+                <p className="mt-1 text-sm text-accent">{a.org}</p>
+                {a.note && <p className="mt-3 text-sm text-muted">{a.note}</p>}
+              </li>
             ))}
-          </div>
-        </section>
-
-        {/* ── language mix ────────────────────────────────── */}
-        <section id="languages" className="border-t border-line py-24">
-          <SectionHead
-            n={2}
-            label="Where the time went"
-            title="Language mix"
-            sub="My own estimate across 10 years of shipping — most of it lives in private repositories, so GitHub cannot tell this story."
-          />
-          <div className="reveal card rounded-2xl border border-line bg-ink-2 p-8 sm:p-10">
-            <LanguageDonut data={languages} centerValue="10 yrs" centerLabel="shipping mobile" />
-          </div>
+          </ul>
         </section>
 
         {/* ── experience ──────────────────────────────────── */}
         <section id="experience" className="border-t border-line py-24">
-          <SectionHead n={3}
+          <SectionHead n={2}
             label="Where I have been" title="Experience" />
           <ol className="relative border-l border-line pl-8">
             {experience.map((job, i) => (
@@ -188,7 +165,7 @@ export default function Page() {
         {/* ── projects ────────────────────────────────────── */}
         <section id="projects" className="border-t border-line py-24">
           <SectionHead
-            n={4}
+            n={3}
             label="Shipped products"
             title="Work"
             sub="Apps I have built and maintained in production."
@@ -310,9 +287,81 @@ export default function Page() {
               ))}
             </div>
           </div>
+        </section>
 
-          {/* side projects, compact */}
-          <div className="reveal mt-14">
+        {/* ── education ───────────────────────────────────── */}
+        <section id="education" className="border-t border-line py-24">
+          <SectionHead n={4}
+            label="Background" title="Education" />
+          <div className="grid gap-5 sm:grid-cols-2">
+            {education.map((e, i) => (
+              <div
+                key={e.school}
+                className="reveal card rounded-2xl border border-line bg-ink-2 p-6"
+                style={{ '--d': `${i * 70}ms` }}
+              >
+                <p className="font-mono text-xs text-muted">{e.period}</p>
+                <h3 className="mt-2 font-medium">{e.school}</h3>
+                <p className="mt-1 text-sm text-muted">{e.degree}</p>
+                {e.location && <p className="mt-1 text-xs text-muted">{e.location}</p>}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── skills ──────────────────────────────────────── */}
+        <section id="about" className="border-t border-line py-24">
+          <SectionHead
+            n={5}
+            label="What I work with"
+            title="Skills"
+            sub="Day-to-day tools, roughly in the order I reach for them."
+          />
+          <div className="grid gap-6 sm:grid-cols-2">
+            {skills.map((s, i) => (
+              <div
+                key={s.group}
+                className="reveal card rounded-2xl border border-line bg-ink-2 p-6"
+                style={{ '--d': `${i * 70}ms` }}
+              >
+                <h3 className="mb-4 font-mono text-xs tracking-[0.15em] text-accent uppercase">
+                  {s.group}
+                </h3>
+                <ul className="flex flex-wrap gap-2">
+                  {s.items.map((item) => (
+                    <li key={item} className="rounded-full border border-line px-3 py-1 text-sm text-muted">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── language mix ────────────────────────────────── */}
+        <section id="languages" className="border-t border-line py-24">
+          <SectionHead
+            n={6}
+            label="Where the time went"
+            title="Language mix"
+            sub="My own estimate across 10 years of shipping — most of it lives in private repositories, so GitHub cannot tell this story."
+          />
+          <div className="reveal card rounded-2xl border border-line bg-ink-2 p-8 sm:p-10">
+            <LanguageDonut data={languages} centerValue="10 yrs" centerLabel="shipping mobile" />
+          </div>
+        </section>
+
+        {/* ── repositories ────────────────────────────────── */}
+        <section id="repositories" className="border-t border-line py-24">
+          <SectionHead
+            n={7}
+            label="On GitHub"
+            title="Repositories"
+            sub="A few highlights, then every public repository, refreshed from GitHub every day."
+          />
+          {/* highlighted projects, curated */}
+          <div className="reveal">
             <h3 className="mb-5 font-mono text-xs tracking-[0.15em] text-accent uppercase">
               Highlighted projects
             </h3>
@@ -351,46 +400,6 @@ export default function Page() {
               the 10% visibility threshold would never be met and it would stay hidden. */}
           <div className="mt-14">
             <RepoExplorer repos={allRepos} groups={GROUPS} githubUrl={profile.github} />
-          </div>
-        </section>
-
-        {/* ── awards ──────────────────────────────────────── */}
-        <section id="awards" className="border-t border-line py-24">
-          <SectionHead n={5}
-            label="Recognition" title="Awards" />
-          <ul className="grid gap-5 sm:grid-cols-2">
-            {awards.map((a, i) => (
-              <li
-                key={a.title}
-                className="reveal card rounded-2xl border border-line bg-ink-2 p-6"
-                style={{ '--d': `${i * 60}ms` }}
-              >
-                <p className="font-mono text-xs text-muted">{a.date}</p>
-                <h3 className="mt-2 font-medium">{a.title}</h3>
-                <p className="mt-1 text-sm text-accent">{a.org}</p>
-                {a.note && <p className="mt-3 text-sm text-muted">{a.note}</p>}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        {/* ── education ───────────────────────────────────── */}
-        <section className="border-t border-line py-24">
-          <SectionHead n={6}
-            label="Background" title="Education" />
-          <div className="grid gap-5 sm:grid-cols-2">
-            {education.map((e, i) => (
-              <div
-                key={e.school}
-                className="reveal card rounded-2xl border border-line bg-ink-2 p-6"
-                style={{ '--d': `${i * 70}ms` }}
-              >
-                <p className="font-mono text-xs text-muted">{e.period}</p>
-                <h3 className="mt-2 font-medium">{e.school}</h3>
-                <p className="mt-1 text-sm text-muted">{e.degree}</p>
-                {e.location && <p className="mt-1 text-xs text-muted">{e.location}</p>}
-              </div>
-            ))}
           </div>
         </section>
 
